@@ -416,7 +416,7 @@ main {
   color: var(--color-text-tertiary);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  margin-bottom: 4px;
+  margin-bottom: 0;
 }
 
 .section-title {
@@ -424,6 +424,7 @@ main {
   font-weight: var(--font-weight-medium);
   color: var(--color-text-primary);
   line-height: var(--line-height-tight);
+  margin-top: 0;
   margin-bottom: var(--spacing-3);
   letter-spacing: 0;
 }
