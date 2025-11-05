@@ -179,76 +179,138 @@
           <h4>Streamlined User Flow</h4>
           <p>Designed a linear flow with strategic decision points:</p>
 
-          <div class="flow-diagram">
-            <div class="flow-step">
-              <div class="flow-number">1</div>
-              <div class="flow-content">
-                <div class="flow-title">Loyalty Check</div>
-                <div class="flow-description">Auto-detect loyalty members for personalized welcome</div>
-              </div>
-            </div>
-            <div class="flow-arrow"></div>
+          <div class="flow-diagram-container">
+            <div class="flow-diagram">
+              <svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                    <polygon points="0 0, 10 3, 0 6" fill="rgba(255, 255, 255, 0.1)" />
+                  </marker>
+                </defs>
 
-            <div class="flow-step">
-              <div class="flow-number">2</div>
-              <div class="flow-content">
-                <div class="flow-title">Dine-in or To-Go</div>
-                <div class="flow-description">Set fulfillment expectations early in the flow</div>
-              </div>
-            </div>
-            <div class="flow-arrow"></div>
+                <!-- IDLE -->
+                <rect x="20" y="180" width="120" height="60" rx="30" class="flow-rounded"/>
+                <text x="80" y="215" class="flow-text">IDLE</text>
 
-            <div class="flow-step">
-              <div class="flow-number">3</div>
-              <div class="flow-content">
-                <div class="flow-title">Menu Browsing</div>
-                <div class="flow-description">Category navigation with visual cards and food photography</div>
-              </div>
-            </div>
-            <div class="flow-arrow"></div>
+                <!-- Arrow to Loyalty Check -->
+                <path d="M 140 210 L 180 210" class="flow-arrow"/>
 
-            <div class="flow-step">
-              <div class="flow-number">4</div>
-              <div class="flow-content">
-                <div class="flow-title">Item Customization</div>
-                <div class="flow-description">Modifiers presented clearly with grouped options</div>
-              </div>
-            </div>
-            <div class="flow-arrow"></div>
+                <!-- Loyalty Enabled (Diamond) -->
+                <polygon points="240,210 280,170 320,210 280,250" class="flow-diamond"/>
+                <text x="280" y="210" class="flow-text-small">Loyalty</text>
+                <text x="280" y="225" class="flow-text-small">Enabled</text>
 
-            <div class="flow-step">
-              <div class="flow-number">5</div>
-              <div class="flow-content">
-                <div class="flow-title">Cart Review</div>
-                <div class="flow-description">Opportunity to edit items before proceeding to checkout</div>
-              </div>
-            </div>
-            <div class="flow-arrow"></div>
+                <!-- No path -->
+                <path d="M 320 190 L 360 190" class="flow-arrow"/>
+                <text x="340" y="185" class="flow-label">No</text>
 
-            <div class="flow-step">
-              <div class="flow-number">6</div>
-              <div class="flow-content">
-                <div class="flow-title">Customer Info</div>
-                <div class="flow-description">Name and phone number for order tracking and updates</div>
-              </div>
-            </div>
-            <div class="flow-arrow"></div>
+                <!-- Yes path -->
+                <path d="M 280 250 L 280 290 L 400 290" class="flow-arrow"/>
+                <text x="290" y="275" class="flow-label">Yes</text>
 
-            <div class="flow-step">
-              <div class="flow-number">7</div>
-              <div class="flow-content">
-                <div class="flow-title">Payment Choice</div>
-                <div class="flow-description">Kiosk payment or pay at counter for flexibility</div>
-              </div>
-            </div>
-            <div class="flow-arrow"></div>
+                <!-- Welcome Screen (Name) -->
+                <rect x="360" y="160" width="140" height="60" class="flow-rect"/>
+                <text x="430" y="185" class="flow-text">Welcome Screen</text>
+                <text x="430" y="202" class="flow-text-small">(Name)</text>
 
-            <div class="flow-step">
-              <div class="flow-number">8</div>
-              <div class="flow-content">
-                <div class="flow-title">Confirmation</div>
-                <div class="flow-description">Order number, wait time, and receipt options</div>
-              </div>
+                <!-- Welcome Screen (Phone) -->
+                <rect x="360" y="260" width="140" height="60" class="flow-rect"/>
+                <text x="430" y="285" class="flow-text">Welcome Screen</text>
+                <text x="430" y="302" class="flow-text-small">(Phone Number)</text>
+
+                <!-- Arrows to Ordering Screens -->
+                <path d="M 500 190 L 540 190 L 540 280 L 580 280" class="flow-arrow"/>
+                <path d="M 500 290 L 540 290 L 540 280 L 580 280" class="flow-arrow"/>
+
+                <!-- Ordering Screens -->
+                <rect x="580" y="250" width="140" height="60" class="flow-rect"/>
+                <text x="650" y="285" class="flow-text">Ordering Screens</text>
+
+                <!-- Arrow up to Ordering -->
+                <path d="M 650 250 L 650 210 L 540 210 L 540 190" class="flow-arrow"/>
+
+                <!-- Arrow to Payment Decision -->
+                <path d="M 720 280 L 780 280" class="flow-arrow"/>
+
+                <!-- Allow Pay Up Front (Diamond) -->
+                <polygon points="840,280 880,240 920,280 880,320" class="flow-diamond"/>
+                <text x="880" y="275" class="flow-text-small">Allow Pay</text>
+                <text x="880" y="290" class="flow-text-small">Up Front?</text>
+
+                <!-- Yes to Choose Payment -->
+                <path d="M 920 280 L 980 280" class="flow-arrow"/>
+                <text x="940" y="275" class="flow-label">Yes</text>
+
+                <!-- Choose Payment Type -->
+                <rect x="980" y="250" width="140" height="60" class="flow-rect"/>
+                <text x="1050" y="275" class="flow-text">Choose Payment</text>
+                <text x="1050" y="292" class="flow-text-small">Type</text>
+
+                <!-- No to Credit Payment -->
+                <path d="M 880 320 L 880 380" class="flow-arrow"/>
+                <text x="890" y="350" class="flow-label">No</text>
+
+                <!-- Credit Payment Screen -->
+                <rect x="810" y="380" width="140" height="60" class="flow-rect"/>
+                <text x="880" y="405" class="flow-text">Credit Payment</text>
+                <text x="880" y="422" class="flow-text-small">Screen</text>
+
+                <!-- Arrow down from Choose Payment -->
+                <path d="M 1050 310 L 1050 360" class="flow-arrow"/>
+
+                <!-- Chose Pay Up Front (Diamond) -->
+                <polygon points="1050,400 1090,360 1130,400 1090,440" class="flow-diamond"/>
+                <text x="1090" y="395" class="flow-text-small">Chose Pay</text>
+                <text x="1090" y="410" class="flow-text-small">Up Front?</text>
+
+                <!-- Yes to Pay Up Front -->
+                <path d="M 1090 440 L 1090 480" class="flow-arrow"/>
+                <text x="1100" y="460" class="flow-label">Yes</text>
+
+                <!-- Pay Up Front Screen -->
+                <rect x="1020" y="480" width="140" height="60" class="flow-rect"/>
+                <text x="1090" y="515" class="flow-text">Pay Up Front</text>
+                <text x="1090" y="532" class="flow-text-small">screen</text>
+
+                <!-- No to Payment Successful -->
+                <path d="M 1050 400 L 980 400 L 980 470" class="flow-arrow"/>
+                <text x="1000" y="395" class="flow-label">No</text>
+
+                <!-- Payment Successful (Diamond) -->
+                <polygon points="980,510 1020,470 1060,510 1020,550" class="flow-diamond"/>
+                <text x="1020" y="505" class="flow-text-small">Payment</text>
+                <text x="1020" y="520" class="flow-text-small">Successful?</text>
+
+                <!-- Arrow from Credit Payment to Payment Successful -->
+                <path d="M 880 440 L 880 490 L 980 490" class="flow-arrow"/>
+
+                <!-- Arrow from Pay Up Front to Payment Successful -->
+                <path d="M 1090 540 L 1090 560 L 1060 560 L 1060 510" class="flow-arrow"/>
+
+                <!-- Yes to Complete/Receipt -->
+                <path d="M 980 510 L 880 510 L 880 560 L 800 560" class="flow-arrow"/>
+                <text x="900" y="505" class="flow-label">Yes</text>
+
+                <!-- Complete/Receipt Screen -->
+                <rect x="660" y="530" width="140" height="60" class="flow-rect"/>
+                <text x="730" y="555" class="flow-text">Complete/</text>
+                <text x="730" y="572" class="flow-text-small">Receipt Screen</text>
+
+                <!-- No to Decline -->
+                <path d="M 1020 550 L 1020 580 L 880 580" class="flow-arrow"/>
+                <text x="960" y="575" class="flow-label">No</text>
+
+                <!-- Decline Screen -->
+                <rect x="810" y="550" width="140" height="60" class="flow-rect"/>
+                <text x="880" y="585" class="flow-text">Decline Screen</text>
+
+                <!-- Arrow from Decline to Pay Up Front -->
+                <path d="M 950 560 L 1020 560 L 1020 540" class="flow-arrow"/>
+
+                <!-- Arrow back to IDLE -->
+                <path d="M 660 560 L 80 560 L 80 240" class="flow-arrow"/>
+
+              </svg>
             </div>
           </div>
 

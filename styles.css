@@ -655,77 +655,73 @@ li::marker {
    FLOW DIAGRAM
    ======================================== */
 
-.flow-diagram {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-4);
+.flow-diagram-container {
   margin: var(--spacing-8) 0;
   padding: var(--spacing-8);
   background: var(--color-background-secondary);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
+  overflow-x: auto;
 }
 
-.flow-step {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-6);
+.flow-diagram {
+  min-width: 900px;
 }
 
-.flow-number {
-  flex-shrink: 0;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-accent);
-  color: var(--color-background-primary);
-  border-radius: 50%;
-  font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-xl);
+.flow-diagram svg {
+  width: 100%;
+  height: auto;
 }
 
-.flow-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-1);
+.flow-rect {
+  fill: var(--color-surface);
+  stroke: var(--color-border);
+  stroke-width: 2;
 }
 
-.flow-title {
-  font-size: var(--font-size-lg);
+.flow-diamond {
+  fill: var(--color-surface);
+  stroke: var(--color-accent);
+  stroke-width: 2;
+}
+
+.flow-rounded {
+  fill: var(--color-surface);
+  stroke: rgba(255, 255, 255, 0.15);
+  stroke-width: 2;
+}
+
+.flow-text {
+  fill: var(--color-text-primary);
+  font-family: var(--font-primary);
+  font-size: 14px;
   font-weight: var(--font-weight-medium);
-  color: var(--color-text-primary);
-  margin: 0;
+  text-anchor: middle;
 }
 
-.flow-description {
-  font-size: var(--font-size-base);
-  color: var(--color-text-secondary);
-  margin: 0;
+.flow-text-small {
+  fill: var(--color-text-secondary);
+  font-family: var(--font-primary);
+  font-size: 12px;
+  text-anchor: middle;
 }
 
 .flow-arrow {
-  width: 2px;
-  height: var(--spacing-6);
-  background: var(--color-border);
-  margin-left: 23px;
+  stroke: var(--color-border);
+  stroke-width: 2;
+  fill: none;
+  marker-end: url(#arrowhead);
+}
+
+.flow-label {
+  fill: var(--color-text-secondary);
+  font-family: var(--font-primary);
+  font-size: 12px;
 }
 
 @media (max-width: 1014px) {
-  .flow-diagram {
-    padding: var(--spacing-6);
-  }
-
-  .flow-number {
-    width: 40px;
-    height: 40px;
-    font-size: var(--font-size-lg);
-  }
-
-  .flow-arrow {
-    margin-left: 19px;
+  .flow-diagram-container {
+    padding: var(--spacing-4);
   }
 }
 
