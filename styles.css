@@ -459,7 +459,7 @@ main {
   transform-style: preserve-3d;
   /* Initial state set by JavaScript */
   opacity: 0;
-  transform: perspective(1200px) scale(0.8) translateY(60px) rotateX(20deg);
+  transform: perspective(1200px) scale(0.6) translateY(60px) rotateX(20deg);
 }
 
 .project-card:hover {

@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Calculate values based on progress
       const opacity = eased;
-      const scale = 0.8 + (0.2 * eased); // 0.8 to 1
+      const scale = 0.6 + (0.4 * eased); // 0.6 to 1
       const translateY = 60 - (60 * eased); // 60px to 0
       const rotateX = 20 - (20 * eased); // 20deg to 0deg
 
