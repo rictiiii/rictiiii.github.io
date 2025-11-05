@@ -305,7 +305,7 @@ main {
 }
 
 .hero-description {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-2xl);
   font-weight: var(--font-weight-regular);
   color: var(--color-text-secondary);
   line-height: var(--line-height-normal);
