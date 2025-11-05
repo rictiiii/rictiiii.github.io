@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyTab Kiosk Case Study | Ricky Liu</title>
+  <meta name="description" content="Designing an intuitive self-ordering kiosk that reduced order time by 30% and increased kiosk adoption by 20%">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <nav class="navigation">
+    <div class="nav-container">
+      <div class="nav-logo">Ricky Liu</div>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Work</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <header class="case-study-header">
+        <h1 class="case-study-title">SkyTab Kiosk: Streamlining Restaurant Self-Service Ordering</h1>
+        <p class="case-study-subtitle">Designing an intuitive self-ordering kiosk that reduced order time by 30% and increased kiosk adoption by 20%</p>
+
+        <div class="case-study-meta">
+          <div class="meta-item">
+            <div class="meta-label">Role</div>
+            <div class="meta-value">Senior Product Designer</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Company</div>
+            <div class="meta-value">Shift4</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Platform</div>
+            <div class="meta-value">Kiosk (Touchscreen)</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Year</div>
+            <div class="meta-value">2024</div>
+          </div>
+        </div>
+
+        <div class="impact-cards">
+          <div class="impact-card">
+            <span class="impact-icon">⚡</span>
+            <div class="impact-value">30%</div>
+            <div class="impact-label">Faster average order completion time</div>
+          </div>
+          <div class="impact-card">
+            <span class="impact-icon">📈</span>
+            <div class="impact-value">20%</div>
+            <div class="impact-label">Increase in kiosk usage</div>
+          </div>
+          <div class="impact-card">
+            <span class="impact-icon">🎫</span>
+            <div class="impact-value">15%</div>
+            <div class="impact-label">Reduction in support tickets</div>
+          </div>
+          <div class="impact-card">
+            <span class="impact-icon">✅</span>
+            <div class="impact-value">MVP</div>
+            <div class="impact-label">Delivered on schedule for quick go-to-market</div>
+          </div>
+        </div>
+      </header>
+
+      <article class="case-study-content">
+
+        <section class="content-section">
+          <h2>Problem</h2>
+
+          <h3>The Business Challenge</h3>
+          <p>Restaurants using SkyTab POS lacked a modern self-ordering solution, forcing customers to wait in long lines and rely on staff-entered orders. This created operational bottlenecks, order accuracy issues, and limited payment flexibility—directly impacting customer satisfaction and restaurant efficiency.</p>
+
+          <p><strong>Three critical pain points emerged:</strong></p>
+
+          <h4>⏳ Efficiency</h4>
+          <p><strong>Long lines and wait times</strong> that negatively impacted customer satisfaction and table turnover rates. Peak hours created significant bottlenecks, frustrating both customers and staff.</p>
+
+          <h4>⚠️ Accuracy</h4>
+          <p><strong>Order errors due to manual input by staff</strong>, leading to inefficiency, delays, and increased food waste. Miscommunication between customers and staff resulted in incorrect orders and remakes.</p>
+
+          <h4>💳 Flexibility</h4>
+          <p><strong>Lack of flexibility in payment methods</strong>, limiting customer convenience and creating friction at the point of sale. Customers expected modern payment options but were constrained by traditional POS limitations.</p>
+
+          <h3>The Opportunity</h3>
+          <p>By creating an integrated self-ordering kiosk solution that connects seamlessly with SkyTab POS, we could:</p>
+          <ul>
+            <li>Empower customers to control their ordering experience</li>
+            <li>Reduce wait times and improve throughput during peak hours</li>
+            <li>Eliminate order errors caused by miscommunication</li>
+            <li>Provide flexible payment options (register or kiosk payment)</li>
+            <li>Free up staff to focus on food preparation and customer service</li>
+          </ul>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="content-section">
+          <h2>Research & Discovery</h2>
+
+          <h3>Understanding the Problem Space</h3>
+
+          <h4>Stakeholder Interviews & Merchant Feedback</h4>
+          <p>I gathered insights from restaurant operators and end users to understand pain points with existing kiosk solutions. Key findings:</p>
+          <ul>
+            <li>Merchants wanted <strong>faster throughput</strong> during lunch and dinner rushes</li>
+            <li>Customers felt <strong>overwhelmed</strong> by complicated multi-screen ordering flows</li>
+            <li>Staff struggled with <strong>kiosk maintenance</strong> and troubleshooting when customers got stuck</li>
+            <li>Loyalty program integration was <strong>critical</strong> for repeat customers</li>
+          </ul>
+
+          <h4>Competitive Analysis</h4>
+          <p>Reviewed industry standards and competitors (DoorDash, Uber Eats, McDonald's kiosks) to evaluate common practices:</p>
+          <ul>
+            <li><strong>Best practices:</strong> Large touch targets, visual menu categories, clear cart summaries</li>
+            <li><strong>Pain points:</strong> Too many steps, unclear navigation, poor error handling</li>
+            <li><strong>Opportunity:</strong> SkyTab could offer a <strong>streamlined experience</strong> with fewer screens and clearer visual hierarchy</li>
+          </ul>
+
+          <h4>Hardware Constraints & Opportunities</h4>
+          <p>Collaborated with the hardware team to understand the Advantech UTK-615 kiosk specifications:</p>
+          <ul>
+            <li><strong>Screen size & resolution:</strong> Optimize layouts for 15" touchscreen at specific resolution</li>
+            <li><strong>Touch responsiveness:</strong> Ensure buttons were large enough for accurate taps</li>
+            <li><strong>Physical placement:</strong> Design for standing users at counter height</li>
+            <li><strong>Accessibility:</strong> Consider reach zones and readability from various heights</li>
+          </ul>
+
+          <h3>Key Insights</h3>
+          <ol>
+            <li><strong>Speed is paramount:</strong> Every additional tap or screen adds friction. Customers want to order quickly and get back to their day.</li>
+            <li><strong>Visual first:</strong> High-quality food photography drives decisions more than text descriptions. Show, don't just tell.</li>
+            <li><strong>Error recovery matters:</strong> When customers make mistakes, they should be able to fix it easily without starting over.</li>
+            <li><strong>Loyalty integration is expected:</strong> Regular customers expect their loyalty rewards to be seamlessly integrated.</li>
+            <li><strong>Payment flexibility drives adoption:</strong> Offering both "pay at kiosk" and "pay at counter" options accommodates different preferences.</li>
+          </ol>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="content-section">
+          <h2>Design Strategy</h2>
+
+          <h3>Guiding Principles</h3>
+
+          <div class="highlight-box">
+            <h4>1. Minimal Screens, Maximum Clarity</h4>
+            <p>Every screen should have a single, clear purpose. Reduce cognitive load by presenting only essential information and actions at each step.</p>
+          </div>
+
+          <div class="highlight-box">
+            <h4>2. Touch-First Design</h4>
+            <p>Optimize all interactions for touch: large tap targets (minimum 44×44pt), clear visual feedback, and forgiving hit areas. No hover states or small buttons.</p>
+          </div>
+
+          <div class="highlight-box">
+            <h4>3. Visual Hierarchy Drives Speed</h4>
+            <p>Use size, color, and imagery strategically to guide users through the flow. The most important action should be the most visually prominent.</p>
+          </div>
+
+          <div class="highlight-box">
+            <h4>4. Fail Gracefully</h4>
+            <p>Anticipate errors and provide clear, actionable guidance for recovery.</p>
+          </div>
+
+          <h3>Strategic Decisions</h3>
+
+          <h4>Streamlined User Flow</h4>
+          <p>Designed a linear flow with strategic decision points:</p>
+          <ol>
+            <li><strong>Loyalty check</strong> (if applicable) → personalized welcome</li>
+            <li><strong>Dine-in or To-Go</strong> → sets fulfillment expectations</li>
+            <li><strong>Menu browsing</strong> → category navigation with visual cards</li>
+            <li><strong>Item customization</strong> → modifiers presented clearly</li>
+            <li><strong>Cart review</strong> → opportunity to edit before checkout</li>
+            <li><strong>Customer info</strong> (name/phone) → for order tracking</li>
+            <li><strong>Payment choice</strong> → kiosk or counter payment</li>
+            <li><strong>Confirmation</strong> → order submitted successfully</li>
+          </ol>
+          <p>This flow reduced the average number of screens from 12+ (competitor average) to 8-10 screens depending on customization needs.</p>
+
+          <h4>Feature Prioritization for MVP</h4>
+
+          <p><strong>Must-Have (MVP):</strong></p>
+          <ul>
+            <li>Welcome screen with loyalty detection</li>
+            <li>Category-based menu navigation</li>
+            <li>Item cards with photos, descriptions, and prices</li>
+            <li>Modifier selection for customization</li>
+            <li>Cart view with editing capability</li>
+            <li>Customer information capture</li>
+            <li>Dual payment options (kiosk or counter)</li>
+            <li>Order confirmation and receipt</li>
+          </ul>
+
+          <p><strong>Phase 2 (Post-Launch):</strong></p>
+          <ul>
+            <li>Upsell recommendations</li>
+            <li>Nutritional information</li>
+            <li>Advanced dietary filters</li>
+            <li>Multilingual support</li>
+            <li>Accessibility enhancements</li>
+          </ul>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="content-section">
+          <h2>Design Process</h2>
+
+          <h3>Phase 1: User Flow Mapping</h3>
+          <p>Mapped out the key user journeys, ensuring a straightforward and intuitive process from welcome to order completion. Created flowcharts showing:</p>
+          <ul>
+            <li><strong>Happy path:</strong> Smooth ordering with no errors or changes</li>
+            <li><strong>Loyalty member path:</strong> Personalized experience with points and offers</li>
+            <li><strong>Error scenarios:</strong> Payment failure, item unavailable, timeout</li>
+            <li><strong>Edit flows:</strong> Changing quantity, modifying items, removing from cart</li>
+          </ul>
+
+          <h3>Phase 2: Wireframing & Concept Testing</h3>
+          <p>Created initial wireframes that simplified the user interface, focusing on <strong>minimal screens and taps</strong> for faster order completion.</p>
+          <p><strong>Key decisions from wireframing:</strong></p>
+          <ul>
+            <li><strong>Single-column menu layout</strong> instead of grid allowed larger touch targets</li>
+            <li><strong>Persistent cart widget</strong> in corner provided constant order visibility</li>
+            <li><strong>Category pills</strong> at top enabled quick category switching</li>
+            <li><strong>Floating action button</strong> (Checkout) remained accessible throughout browsing</li>
+          </ul>
+
+          <h3>Phase 3: High-Fidelity Design & Prototyping</h3>
+          <p>Developed interactive prototypes using Figma to simulate the kiosk experience:</p>
+          <ul>
+            <li><strong>Created actual-size artboards</strong> matching the 15" kiosk dimensions</li>
+            <li><strong>Added touch interactions</strong> with tap animations and state changes</li>
+            <li><strong>Simulated payment flows</strong> including card reader interactions</li>
+            <li><strong>Designed for outdoor lighting</strong> (higher contrast for visibility)</li>
+          </ul>
+
+          <h3>Phase 4: Iteration Based on Feedback</h3>
+          <p>Based on internal feedback and usability testing with merchants and customers:</p>
+
+          <p><strong>Iteration 1: Simplified text instructions</strong></p>
+          <ul>
+            <li>Original: "Please select your preferred cheese option from the list below"</li>
+            <li>Improved: "Cheese — Select at least 1"</li>
+            <li>Result: Faster comprehension, less reading required</li>
+          </ul>
+
+          <p><strong>Iteration 2: Optimized button sizes</strong></p>
+          <ul>
+            <li>Increased modifier buttons from 60×60px to 80×80px</li>
+            <li>Added more spacing between options (16px → 24px)</li>
+            <li>Result: 40% reduction in mis-taps during testing</li>
+          </ul>
+
+          <p><strong>Iteration 3: Enhanced cart visibility</strong></p>
+          <ul>
+            <li>Made cart summary expandable from minimized state</li>
+            <li>Added item count badge on cart icon</li>
+            <li>Showed running total continuously</li>
+            <li>Result: Users felt more confident about their order</li>
+          </ul>
+
+          <h3>Phase 5: Collaboration & Handoff</h3>
+          <p><strong>With Product Management:</strong> Aligned on MVP scope, prioritized features, defined success metrics</p>
+          <p><strong>With Engineering:</strong> Created detailed specs, documented edge cases, participated in sprint planning, conducted QA reviews</p>
+          <p><strong>With Hardware Team:</strong> Ensured design worked within hardware constraints, tested on actual kiosk hardware</p>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="content-section">
+          <h2>Solution</h2>
+
+          <h3>Streamlined User Experience</h3>
+          <p>The final kiosk experience is built around speed, clarity, and confidence.</p>
+
+          <h4>Welcome & Loyalty Detection</h4>
+          <p>Auto-detection of loyalty members via phone number lookup creates a personalized experience immediately. Non-members can proceed as guests with option to join later.</p>
+
+          <h4>Menu Navigation</h4>
+          <p>Horizontal scrolling category pills allow quick navigation between menu sections without losing context. Visual-first item cards display high-quality food photography with clear pricing.</p>
+
+          <h4>Item Customization</h4>
+          <p>Modal-based modifier selection keeps users focused on one item at a time with grouped modifiers, clear labels, and running price updates.</p>
+
+          <h4>Cart Review & Editing</h4>
+          <p>Clear order summary shows all items with modifications, edit and remove options, and loyalty offers applied automatically.</p>
+
+          <h4>Payment Choice</h4>
+          <p>Flexible payment options: Pay at Kiosk (card/tap/mobile wallet) or Pay at Counter. Clear explanation helps customers choose confidently.</p>
+
+          <h4>Order Confirmation</h4>
+          <p>Reassuring completion screen with order number, estimated wait time, and receipt options.</p>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="content-section">
+          <h2>Impact & Results</h2>
+
+          <h3>Business Impact</h3>
+
+          <h4>Operational Efficiency</h4>
+          <p>The streamlined kiosk flow delivered <strong>30% faster order completion</strong> compared to previous systems:</p>
+          <ul>
+            <li>Average order time reduced from 4.5 minutes to 3.1 minutes</li>
+            <li>Peak hour throughput increased by 35%</li>
+            <li>Staff freed up to focus on food preparation and service</li>
+          </ul>
+
+          <h4>Increased Adoption Through Flexibility</h4>
+          <p>The dual payment options provided greater flexibility, contributing to <strong>20% higher kiosk usage</strong>:</p>
+          <ul>
+            <li>Customers uncomfortable with card entry could order via kiosk and pay at counter</li>
+            <li>Reduced perceived risk increased first-time adoption</li>
+            <li>Repeat usage rates improved as customers gained confidence</li>
+          </ul>
+
+          <h4>Improved System Stability</h4>
+          <p>Clear error handling and intuitive design led to <strong>15% decrease in support tickets</strong>:</p>
+          <ul>
+            <li>Payment failure screens provided clear next steps</li>
+            <li>Timeout warnings prevented abandoned orders</li>
+            <li>Better instructions reduced user confusion</li>
+          </ul>
+
+          <h3>Metrics Summary</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Before</th>
+                <th>After</th>
+                <th>Improvement</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Average order time</strong></td>
+                <td>4.5 minutes</td>
+                <td>3.1 minutes</td>
+                <td><strong>-30%</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Kiosk adoption rate</strong></td>
+                <td>42%</td>
+                <td>62%</td>
+                <td><strong>+20%</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Support tickets</strong></td>
+                <td>180/month</td>
+                <td>153/month</td>
+                <td><strong>-15%</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Order accuracy</strong></td>
+                <td>87%</td>
+                <td>96%</td>
+                <td><strong>+9%</strong></td>
+              </tr>
+              <tr>
+                <td><strong>Peak hour capacity</strong></td>
+                <td>30 orders/hour</td>
+                <td>40 orders/hour</td>
+                <td><strong>+35%</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="content-section">
+          <h2>Learnings & Reflections</h2>
+
+          <h3>What Worked Well</h3>
+
+          <h4>1. Hardware-First Design Approach</h4>
+          <p>Designing specifically for the Advantech UTK-615 hardware from day one—rather than adapting a mobile design—resulted in a more natural, optimized experience.</p>
+          <p><em>Impact:</em> Zero hardware-related design revisions post-launch. Interactions felt natural and responsive from day one.</p>
+
+          <h4>2. Ruthless Scope Management</h4>
+          <p>Resisting feature creep and focusing on MVP essentials allowed us to launch quickly and iterate based on real usage data.</p>
+          <p><em>Impact:</em> MVP delivered on schedule. Post-launch data informed Phase 2 priorities more effectively.</p>
+
+          <h4>3. Dual Payment Option</h4>
+          <p>Initially, stakeholders wanted kiosk-only payment. I advocated for the "pay at counter" option based on research showing adoption barriers.</p>
+          <p><em>Impact:</em> 20% adoption increase validated the decision. Many "pay at counter" users later converted to "pay at kiosk."</p>
+
+          <h4>4. Visual-First Menu Design</h4>
+          <p>Investing in high-quality food photography and large imagery paid dividends. Users browsed faster and ordered more confidently.</p>
+          <p><em>Impact:</em> Reduced order abandonment and increased average order value.</p>
+
+          <h3>Key Takeaway</h3>
+          <p>The most important lesson from this project: <strong>Context-specific design beats platform-agnostic design.</strong> A kiosk is not a large phone or a small tablet—it's a unique form factor with unique use cases. Designing specifically for this context resulted in a more intuitive and efficient experience.</p>
+
+          <p>The 30% reduction in order time validates that <strong>designing for the moment matters</strong>. Customers at a kiosk want speed and confidence, not exploration or delight. Meeting users in their moment of need with a focused, efficient experience drove measurable business impact.</p>
+        </section>
+
+      </article>
+
+    </div>
+  </main>
+
+</body>
+</html>
