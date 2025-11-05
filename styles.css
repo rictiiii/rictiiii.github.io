@@ -406,6 +406,35 @@ main {
   margin-bottom: var(--spacing-20);
 }
 
+.case-study-section {
+  margin-bottom: var(--spacing-16);
+}
+
+.section-label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-tertiary);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-3);
+}
+
+.section-title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--spacing-6);
+  letter-spacing: 0;
+}
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--color-border);
+  margin-bottom: var(--spacing-8);
+}
+
 /* ========================================
    PROJECT CARDS (HOMEPAGE)
    ======================================== */
