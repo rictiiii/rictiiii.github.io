@@ -288,8 +288,8 @@ main {
 }
 
 .hero-name {
-  font-size: var(--font-size-6xl);
-  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-regular);
   line-height: 1.1;
   margin-bottom: var(--spacing-6);
   scroll-margin-top: 30px;
