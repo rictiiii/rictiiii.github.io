@@ -415,7 +415,7 @@ main {
   will-change: transform, opacity;
   transition: all var(--transition-slow);
   opacity: 0;
-  transform: scale(0.9) translateY(60px);
+  transform: scale(0.8) translateY(60px);
 }
 
 .project-card.is-visible {
@@ -437,7 +437,7 @@ main {
 @keyframes zoomIn {
   0% {
     opacity: 0;
-    transform: scale(0.9) translateY(60px);
+    transform: scale(0.8) translateY(60px);
   }
   100% {
     opacity: 1;
