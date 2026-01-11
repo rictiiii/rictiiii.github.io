@@ -38,3 +38,4 @@ High contrast ratios ensure content is readable for all users.
 
 **Maintainability through System**
 CSS custom properties and systematic naming make the design system sustainable and scalable.
+

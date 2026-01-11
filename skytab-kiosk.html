@@ -3,368 +3,222 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SkyTab Kiosk Case Study | Ricky Liu</title>
+  <title>Shift4 Kiosk Case Study | Ricky Liu</title>
   <meta name="description" content="Designing an intuitive self-ordering kiosk that reduced order time by 30% and increased kiosk adoption by 20%">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=57">
+  <link rel="stylesheet" href="hero-section.css">
+  <link rel="stylesheet" href="skytab-kiosk.css">
+  <script src="navigation.js" defer></script>
 </head>
-<body>
+<body class="case-study-page">
 
   <nav class="navigation">
     <div class="nav-container">
       <div class="nav-logo">Ricky Liu</div>
       <div class="nav-links">
         <a href="index.html" class="nav-link">Work</a>
-        <a href="#" class="nav-link">About</a>
-        <a href="#" class="nav-link">Contact</a>
+        <a href="#" class="nav-link">CV</a>
+        <a href="contact.html" class="nav-link">Contact</a>
       </div>
     </div>
   </nav>
 
   <main>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content-wrapper">
+        <div class="hero-main">
+          <div class="hero-text">
+            <h1 class="hero-title">Shift4 Kiosk: Streamlining Restaurant Self-Service Ordering</h1>
+            <p class="hero-subtitle">Designing an intuitive self-ordering kiosk that reduced order time by 30% and increased kiosk adoption by 20%</p>
+            <div class="hero-details">
+              <div class="hero-detail-item">Senior Product Designer</div>
+              <div class="hero-detail-item">Kiosk (Touchscreen)</div>
+              <div class="hero-detail-item">2024</div>
+            </div>
+          </div>
+          <div class="hero-image-container">
+            <img src="Kiosk.gif" alt="Shift4 Kiosk Interface" style="width: 100%; height: auto; border-radius: 24px;">
+          </div>
+        </div>
+        <div class="hero-metrics">
+          <div class="hero-metric-card">
+            <div class="hero-metric-value">30%</div>
+            <p class="hero-metric-label">Faster average order completion time</p>
+          </div>
+          <div class="hero-metric-card">
+            <div class="hero-metric-value">20%</div>
+            <p class="hero-metric-label">Increase in kiosk usage</p>
+          </div>
+          <div class="hero-metric-card">
+            <div class="hero-metric-value">15%</div>
+            <p class="hero-metric-label">Reduction in support tickets</p>
+          </div>
+          <div class="hero-metric-card">
+            <div class="hero-metric-value">MVP</div>
+            <p class="hero-metric-label">Delivered on schedule for quick go-to-market</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="container">
 
-      <header class="case-study-header">
-        <h1 class="case-study-title">SkyTab Kiosk: Streamlining Restaurant Self-Service Ordering</h1>
-        <p class="case-study-subtitle">Designing an intuitive self-ordering kiosk that reduced order time by 30% and increased kiosk adoption by 20%</p>
-
-        <div class="case-study-meta">
-          <div class="meta-item">
-            <div class="meta-label">Role</div>
-            <div class="meta-value">Senior Product Designer</div>
-          </div>
-          <div class="meta-item">
-            <div class="meta-label">Company</div>
-            <div class="meta-value">Shift4</div>
-          </div>
-          <div class="meta-item">
-            <div class="meta-label">Platform</div>
-            <div class="meta-value">Kiosk (Touchscreen)</div>
-          </div>
-          <div class="meta-item">
-            <div class="meta-label">Year</div>
-            <div class="meta-value">2024</div>
-          </div>
-        </div>
-
-        <div class="impact-cards">
-          <div class="impact-card">
-            <span class="impact-icon">⚡</span>
-            <div class="impact-value">30%</div>
-            <div class="impact-label">Faster average order completion time</div>
-          </div>
-          <div class="impact-card">
-            <span class="impact-icon">📈</span>
-            <div class="impact-value">20%</div>
-            <div class="impact-label">Increase in kiosk usage</div>
-          </div>
-          <div class="impact-card">
-            <span class="impact-icon">🎫</span>
-            <div class="impact-value">15%</div>
-            <div class="impact-label">Reduction in support tickets</div>
-          </div>
-          <div class="impact-card">
-            <span class="impact-icon">✅</span>
-            <div class="impact-value">MVP</div>
-            <div class="impact-label">Delivered on schedule for quick go-to-market</div>
-          </div>
-        </div>
-      </header>
-
-      <article class="case-study-content">
-
-        <section class="content-section">
+      <section class="case-study-section">
           <div class="section-label">Problem</div>
-          <h2 class="section-title">Self-Service Ordering Friction</h2>
+          <h2 class="section-title">30% Order Time Lost to Lines & Errors</h2>
           <div class="section-divider"></div>
 
-          <h3>The Business Challenge</h3>
-          <p>Restaurants using SkyTab POS lacked a modern self-ordering solution, forcing customers to wait in long lines and rely on staff-entered orders. This created operational bottlenecks, order accuracy issues, and limited payment flexibility—directly impacting customer satisfaction and restaurant efficiency.</p>
-
-          <p><strong>Three critical pain points emerged:</strong></p>
-
-          <h4>⏳ Efficiency</h4>
-          <p><strong>Long lines and wait times</strong> that negatively impacted customer satisfaction and table turnover rates. Peak hours created significant bottlenecks, frustrating both customers and staff.</p>
-
-          <h4>⚠️ Accuracy</h4>
-          <p><strong>Order errors due to manual input by staff</strong>, leading to inefficiency, delays, and increased food waste. Miscommunication between customers and staff resulted in incorrect orders and remakes.</p>
-
-          <h4>💳 Flexibility</h4>
-          <p><strong>Lack of flexibility in payment methods</strong>, limiting customer convenience and creating friction at the point of sale. Customers expected modern payment options but were constrained by traditional POS limitations.</p>
-
-          <h3>The Opportunity</h3>
-          <p>By creating an integrated self-ordering kiosk solution that connects seamlessly with SkyTab POS, we could:</p>
-          <ul>
-            <li>Empower customers to control their ordering experience</li>
-            <li>Reduce wait times and improve throughput during peak hours</li>
-            <li>Eliminate order errors caused by miscommunication</li>
-            <li>Provide flexible payment options (register or kiosk payment)</li>
-            <li>Free up staff to focus on food preparation and customer service</li>
-          </ul>
-        </section>
-
-        <section class="content-section">
-          <div class="section-label">Research & Discovery</div>
-          <h2 class="section-title">Understanding User Needs</h2>
-          <div class="section-divider"></div>
-
-          <h3>Understanding the Problem Space</h3>
-
-          <h4>Stakeholder Interviews & Merchant Feedback</h4>
-          <p>I gathered insights from restaurant operators and end users to understand pain points with existing kiosk solutions. Key findings:</p>
-          <ul>
-            <li>Merchants wanted <strong>faster throughput</strong> during lunch and dinner rushes</li>
-            <li>Customers felt <strong>overwhelmed</strong> by complicated multi-screen ordering flows</li>
-            <li>Staff struggled with <strong>kiosk maintenance</strong> and troubleshooting when customers got stuck</li>
-            <li>Loyalty program integration was <strong>critical</strong> for repeat customers</li>
-          </ul>
-
-          <h4>Competitive Analysis</h4>
-          <p>Reviewed industry standards and competitors (DoorDash, Uber Eats, McDonald's kiosks) to evaluate common practices:</p>
-          <ul>
-            <li><strong>Best practices:</strong> Large touch targets, visual menu categories, clear cart summaries</li>
-            <li><strong>Pain points:</strong> Too many steps, unclear navigation, poor error handling</li>
-            <li><strong>Opportunity:</strong> SkyTab could offer a <strong>streamlined experience</strong> with fewer screens and clearer visual hierarchy</li>
-          </ul>
-
-          <h4>Hardware Constraints & Opportunities</h4>
-          <p>Collaborated with the hardware team to understand the Advantech UTK-615 kiosk specifications:</p>
-          <ul>
-            <li><strong>Screen size & resolution:</strong> Optimize layouts for 15" touchscreen at specific resolution</li>
-            <li><strong>Touch responsiveness:</strong> Ensure buttons were large enough for accurate taps</li>
-            <li><strong>Physical placement:</strong> Design for standing users at counter height</li>
-            <li><strong>Accessibility:</strong> Consider reach zones and readability from various heights</li>
-          </ul>
-
-          <h3>Key Insights</h3>
-          <ol>
-            <li><strong>Speed is paramount:</strong> Every additional tap or screen adds friction. Customers want to order quickly and get back to their day.</li>
-            <li><strong>Visual first:</strong> High-quality food photography drives decisions more than text descriptions. Show, don't just tell.</li>
-            <li><strong>Error recovery matters:</strong> When customers make mistakes, they should be able to fix it easily without starting over.</li>
-            <li><strong>Loyalty integration is expected:</strong> Regular customers expect their loyalty rewards to be seamlessly integrated.</li>
-            <li><strong>Payment flexibility drives adoption:</strong> Offering both "pay at kiosk" and "pay at counter" options accommodates different preferences.</li>
-          </ol>
-        </section>
-
-        <section class="content-section">
-          <div class="section-label">Design Strategy</div>
-          <h2 class="section-title">Core Design Principles</h2>
-          <div class="section-divider"></div>
-
-          <h3>Guiding Principles</h3>
-
-          <div class="highlight-box">
-            <h4>1. Minimal Screens, Maximum Clarity</h4>
-            <p>Every screen should have a single, clear purpose. Reduce cognitive load by presenting only essential information and actions at each step.</p>
+          <div style="text-align: center; margin: var(--spacing-12) 0;">
+            <img src="Cartoon people standing in queue flat vector illustration [Converted]-01.png" alt="People waiting in queue" style="max-width: 100%; height: auto;">
+            <p style="margin-top: var(--spacing-4); color: var(--color-text-secondary); font-size: var(--font-size-sm);">
+              Traditional counter ordering: Long lines + manual entry = 30% longer order times
+            </p>
           </div>
 
-          <div class="highlight-box">
-            <h4>2. Touch-First Design</h4>
-            <p>Optimize all interactions for touch: large tap targets (minimum 44×44pt), clear visual feedback, and forgiving hit areas. No hover states or small buttons.</p>
-          </div>
+          <p>SkyTab merchants lacked modern self-ordering, forcing customers to queue and rely on staff-entered orders. Result: bottlenecks, accuracy issues, and payment friction.</p>
 
-          <div class="highlight-box">
-            <h4>3. Visual Hierarchy Drives Speed</h4>
-            <p>Use size, color, and imagery strategically to guide users through the flow. The most important action should be the most visually prominent.</p>
-          </div>
+          <div class="feature-cards-grid" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="feature-card">
+              <div class="feature-card-header">
+                <div class="feature-card-icon">
+                  <span class="material-icons">schedule</span>
+                </div>
+              </div>
+              <div class="feature-card-content">
+                <h4 class="feature-card-title">Efficiency</h4>
+                <p class="feature-card-description">Long lines during peak hours hurt satisfaction and turnover</p>
+              </div>
+            </div>
 
-          <div class="highlight-box">
-            <h4>4. Fail Gracefully</h4>
-            <p>Anticipate errors and provide clear, actionable guidance for recovery.</p>
-          </div>
+            <div class="feature-card">
+              <div class="feature-card-header">
+                <div class="feature-card-icon">
+                  <span class="material-icons">error_outline</span>
+                </div>
+              </div>
+              <div class="feature-card-content">
+                <h4 class="feature-card-title">Accuracy</h4>
+                <p class="feature-card-description">Staff miscommunication = wrong orders + food waste</p>
+              </div>
+            </div>
 
-          <h3>Strategic Decisions</h3>
-
-          <h4>Streamlined User Flow</h4>
-          <p>Designed a linear flow with strategic decision points:</p>
-
-          <div class="flow-diagram-container">
-            <div class="flow-diagram">
-              <svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                    <polygon points="0 0, 10 3, 0 6" fill="rgba(255, 255, 255, 0.1)" />
-                  </marker>
-                </defs>
-
-                <!-- IDLE -->
-                <rect x="20" y="180" width="120" height="60" rx="30" class="flow-rounded"/>
-                <text x="80" y="215" class="flow-text">IDLE</text>
-
-                <!-- Arrow to Loyalty Check -->
-                <path d="M 140 210 L 180 210" class="flow-arrow"/>
-
-                <!-- Loyalty Enabled (Diamond) -->
-                <polygon points="240,210 280,170 320,210 280,250" class="flow-diamond"/>
-                <text x="280" y="210" class="flow-text-small">Loyalty</text>
-                <text x="280" y="225" class="flow-text-small">Enabled</text>
-
-                <!-- No path -->
-                <path d="M 320 190 L 360 190" class="flow-arrow"/>
-                <text x="340" y="185" class="flow-label">No</text>
-
-                <!-- Yes path -->
-                <path d="M 280 250 L 280 290 L 400 290" class="flow-arrow"/>
-                <text x="290" y="275" class="flow-label">Yes</text>
-
-                <!-- Welcome Screen (Name) -->
-                <rect x="360" y="160" width="140" height="60" class="flow-rect"/>
-                <text x="430" y="185" class="flow-text">Welcome Screen</text>
-                <text x="430" y="202" class="flow-text-small">(Name)</text>
-
-                <!-- Welcome Screen (Phone) -->
-                <rect x="360" y="260" width="140" height="60" class="flow-rect"/>
-                <text x="430" y="285" class="flow-text">Welcome Screen</text>
-                <text x="430" y="302" class="flow-text-small">(Phone Number)</text>
-
-                <!-- Arrows to Ordering Screens -->
-                <path d="M 500 190 L 540 190 L 540 280 L 580 280" class="flow-arrow"/>
-                <path d="M 500 290 L 540 290 L 540 280 L 580 280" class="flow-arrow"/>
-
-                <!-- Ordering Screens -->
-                <rect x="580" y="250" width="140" height="60" class="flow-rect"/>
-                <text x="650" y="285" class="flow-text">Ordering Screens</text>
-
-                <!-- Arrow up to Ordering -->
-                <path d="M 650 250 L 650 210 L 540 210 L 540 190" class="flow-arrow"/>
-
-                <!-- Arrow to Payment Decision -->
-                <path d="M 720 280 L 780 280" class="flow-arrow"/>
-
-                <!-- Allow Pay Up Front (Diamond) -->
-                <polygon points="840,280 880,240 920,280 880,320" class="flow-diamond"/>
-                <text x="880" y="275" class="flow-text-small">Allow Pay</text>
-                <text x="880" y="290" class="flow-text-small">Up Front?</text>
-
-                <!-- Yes to Choose Payment -->
-                <path d="M 920 280 L 980 280" class="flow-arrow"/>
-                <text x="940" y="275" class="flow-label">Yes</text>
-
-                <!-- Choose Payment Type -->
-                <rect x="980" y="250" width="140" height="60" class="flow-rect"/>
-                <text x="1050" y="275" class="flow-text">Choose Payment</text>
-                <text x="1050" y="292" class="flow-text-small">Type</text>
-
-                <!-- No to Credit Payment -->
-                <path d="M 880 320 L 880 380" class="flow-arrow"/>
-                <text x="890" y="350" class="flow-label">No</text>
-
-                <!-- Credit Payment Screen -->
-                <rect x="810" y="380" width="140" height="60" class="flow-rect"/>
-                <text x="880" y="405" class="flow-text">Credit Payment</text>
-                <text x="880" y="422" class="flow-text-small">Screen</text>
-
-                <!-- Arrow down from Choose Payment -->
-                <path d="M 1050 310 L 1050 360" class="flow-arrow"/>
-
-                <!-- Chose Pay Up Front (Diamond) -->
-                <polygon points="1050,400 1090,360 1130,400 1090,440" class="flow-diamond"/>
-                <text x="1090" y="395" class="flow-text-small">Chose Pay</text>
-                <text x="1090" y="410" class="flow-text-small">Up Front?</text>
-
-                <!-- Yes to Pay Up Front -->
-                <path d="M 1090 440 L 1090 480" class="flow-arrow"/>
-                <text x="1100" y="460" class="flow-label">Yes</text>
-
-                <!-- Pay Up Front Screen -->
-                <rect x="1020" y="480" width="140" height="60" class="flow-rect"/>
-                <text x="1090" y="515" class="flow-text">Pay Up Front</text>
-                <text x="1090" y="532" class="flow-text-small">screen</text>
-
-                <!-- No to Payment Successful -->
-                <path d="M 1050 400 L 980 400 L 980 470" class="flow-arrow"/>
-                <text x="1000" y="395" class="flow-label">No</text>
-
-                <!-- Payment Successful (Diamond) -->
-                <polygon points="980,510 1020,470 1060,510 1020,550" class="flow-diamond"/>
-                <text x="1020" y="505" class="flow-text-small">Payment</text>
-                <text x="1020" y="520" class="flow-text-small">Successful?</text>
-
-                <!-- Arrow from Credit Payment to Payment Successful -->
-                <path d="M 880 440 L 880 490 L 980 490" class="flow-arrow"/>
-
-                <!-- Arrow from Pay Up Front to Payment Successful -->
-                <path d="M 1090 540 L 1090 560 L 1060 560 L 1060 510" class="flow-arrow"/>
-
-                <!-- Yes to Complete/Receipt -->
-                <path d="M 980 510 L 880 510 L 880 560 L 800 560" class="flow-arrow"/>
-                <text x="900" y="505" class="flow-label">Yes</text>
-
-                <!-- Complete/Receipt Screen -->
-                <rect x="660" y="530" width="140" height="60" class="flow-rect"/>
-                <text x="730" y="555" class="flow-text">Complete/</text>
-                <text x="730" y="572" class="flow-text-small">Receipt Screen</text>
-
-                <!-- No to Decline -->
-                <path d="M 1020 550 L 1020 580 L 880 580" class="flow-arrow"/>
-                <text x="960" y="575" class="flow-label">No</text>
-
-                <!-- Decline Screen -->
-                <rect x="810" y="550" width="140" height="60" class="flow-rect"/>
-                <text x="880" y="585" class="flow-text">Decline Screen</text>
-
-                <!-- Arrow from Decline to Pay Up Front -->
-                <path d="M 950 560 L 1020 560 L 1020 540" class="flow-arrow"/>
-
-                <!-- Arrow back to IDLE -->
-                <path d="M 660 560 L 80 560 L 80 240" class="flow-arrow"/>
-
-              </svg>
+            <div class="feature-card">
+              <div class="feature-card-header">
+                <div class="feature-card-icon">
+                  <span class="material-icons">credit_card</span>
+                </div>
+              </div>
+              <div class="feature-card-content">
+                <h4 class="feature-card-title">Flexibility</h4>
+                <p class="feature-card-description">Limited payment options created checkout friction</p>
+              </div>
             </div>
           </div>
 
-          <p>This flow reduced the average number of screens from 12+ (competitor average) to 8-10 screens depending on customization needs.</p>
+          <h3>Key Insights</h3>
 
-          <h4>Feature Prioritization for MVP</h4>
-
-          <p><strong>Must-Have (MVP):</strong></p>
           <ul>
-            <li>Welcome screen with loyalty detection</li>
-            <li>Category-based menu navigation</li>
-            <li>Item cards with photos, descriptions, and prices</li>
-            <li>Modifier selection for customization</li>
-            <li>Cart view with editing capability</li>
-            <li>Customer information capture</li>
-            <li>Dual payment options (kiosk or counter)</li>
-            <li>Order confirmation and receipt</li>
-          </ul>
-
-          <p><strong>Phase 2 (Post-Launch):</strong></p>
-          <ul>
-            <li>Upsell recommendations</li>
-            <li>Nutritional information</li>
-            <li>Advanced dietary filters</li>
-            <li>Multilingual support</li>
-            <li>Accessibility enhancements</li>
+            <li><strong>Speed > features:</strong> Merchants needed faster throughput. Every extra screen = friction.</li>
+            <li><strong>Visual-first ordering:</strong> Food photos drive decisions—text descriptions don't.</li>
+            <li><strong>Loyalty is critical:</strong> Repeat customers expect seamless rewards integration.</li>
+            <li><strong>Payment flexibility:</strong> Some prefer kiosk payment, others want to pay at counter.</li>
+            <li><strong>Hardware matters:</strong> 15" touch requires 44pt+ targets and standing-height UX.</li>
           </ul>
         </section>
 
-        <section class="content-section">
+      <section class="case-study-section section-accent">
+          <div class="section-label" style="color: var(--color-text-secondary) !important;">Design Strategy</div>
+          <h2 class="section-title" style="color: var(--color-text-primary) !important;">Minimal Screens, Maximum Clarity</h2>
+          <div class="section-divider" style="background: var(--color-border) !important;"></div>
+
+          <h3 style="color: var(--color-text-primary) !important;">Design Principles</h3>
+
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--spacing-6); margin: var(--spacing-6) 0; align-items: stretch;">
+            <div class="bento-feature" style="display: flex !important; flex-direction: column !important; height: 100%;">
+              <div class="feature-card-icon" style="width: 56px !important; height: 56px !important; min-width: 56px !important; min-height: 56px !important; max-width: 56px !important; max-height: 56px !important; margin-bottom: var(--spacing-4); display: flex; align-items: center; justify-content: center; flex-shrink: 0 !important;">
+                <span class="material-icons">filter_1</span>
+              </div>
+              <div class="bento-feature-content" style="margin-top: 0 !important;">
+                <h4 style="margin: 0 0 var(--spacing-3) 0 !important;">Minimal Screens, Maximum Clarity</h4>
+                <p>One purpose per screen. Essential information only.</p>
+              </div>
+            </div>
+
+            <div class="bento-feature" style="display: flex !important; flex-direction: column !important; height: 100%;">
+              <div class="feature-card-icon" style="width: 56px !important; height: 56px !important; min-width: 56px !important; min-height: 56px !important; max-width: 56px !important; max-height: 56px !important; margin-bottom: var(--spacing-4); display: flex; align-items: center; justify-content: center; flex-shrink: 0 !important;">
+                <span class="material-icons">touch_app</span>
+              </div>
+              <div class="bento-feature-content" style="margin-top: 0 !important;">
+                <h4 style="margin: 0 0 var(--spacing-3) 0 !important;">Touch-First<br>Design</h4>
+                <p>Large 44pt+ targets with visual feedback and forgiving hit areas.</p>
+              </div>
+            </div>
+
+            <div class="bento-feature" style="display: flex !important; flex-direction: column !important; height: 100%;">
+              <div class="feature-card-icon" style="width: 56px !important; height: 56px !important; min-width: 56px !important; min-height: 56px !important; max-width: 56px !important; max-height: 56px !important; margin-bottom: var(--spacing-4); display: flex; align-items: center; justify-content: center; flex-shrink: 0 !important;">
+                <span class="material-icons">speed</span>
+              </div>
+              <div class="bento-feature-content" style="margin-top: 0 !important;">
+                <h4 style="margin: 0 0 var(--spacing-3) 0 !important;">Visual Hierarchy = Speed</h4>
+                <p>Primary actions are most prominent. Size and color guide users.</p>
+              </div>
+            </div>
+
+            <div class="bento-feature" style="display: flex !important; flex-direction: column !important; height: 100%;">
+              <div class="feature-card-icon" style="width: 56px !important; height: 56px !important; min-width: 56px !important; min-height: 56px !important; max-width: 56px !important; max-height: 56px !important; margin-bottom: var(--spacing-4); display: flex; align-items: center; justify-content: center; flex-shrink: 0 !important;">
+                <span class="material-icons">warning_amber</span>
+              </div>
+              <div class="bento-feature-content" style="margin-top: 0 !important;">
+                <h4 style="margin: 0 0 var(--spacing-3) 0 !important;">Fail<br>Gracefully</h4>
+                <p>Clear error recovery paths with no dead ends for users.</p>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+      <section class="case-study-section">
           <div class="section-label">Design Process</div>
           <h2 class="section-title">From Research to Prototype</h2>
           <div class="section-divider"></div>
 
           <h3>Phase 1: User Flow Mapping</h3>
-          <p>Mapped out the key user journeys, ensuring a straightforward and intuitive process from welcome to order completion. Created flowcharts showing:</p>
-          <ul>
-            <li><strong>Happy path:</strong> Smooth ordering with no errors or changes</li>
-            <li><strong>Loyalty member path:</strong> Personalized experience with points and offers</li>
-            <li><strong>Error scenarios:</strong> Payment failure, item unavailable, timeout</li>
-            <li><strong>Edit flows:</strong> Changing quantity, modifying items, removing from cart</li>
-          </ul>
+          <p>Mapped out the key user journeys, ensuring a straightforward and intuitive process from welcome to order completion.</p>
+
+          <div class="case-study-image">
+            <img src="Kiosk Flow.png" alt="Kiosk user flow diagram" style="width: 100%; height: auto;">
+            <div class="case-study-image-caption">
+              Complete user flow mapping showing all paths
+            </div>
+          </div>
 
           <h3>Phase 2: Wireframing & Concept Testing</h3>
-          <p>Created initial wireframes that simplified the user interface, focusing on <strong>minimal screens and taps</strong> for faster order completion.</p>
-          <p><strong>Key decisions from wireframing:</strong></p>
-          <ul>
-            <li><strong>Single-column menu layout</strong> instead of grid allowed larger touch targets</li>
-            <li><strong>Persistent cart widget</strong> in corner provided constant order visibility</li>
-            <li><strong>Category pills</strong> at top enabled quick category switching</li>
-            <li><strong>Floating action button</strong> (Checkout) remained accessible throughout browsing</li>
-          </ul>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-8); align-items: center; margin: var(--spacing-6) 0;">
+            <div>
+              <p>Created initial wireframes that simplified the user interface, focusing on <strong>minimal screens and taps</strong> for faster order completion.</p>
+              <p><strong>Key decisions from wireframing:</strong></p>
+              <ul>
+                <li><strong>2x2 grid layout</strong> with large item cards maximized screen real estate and touch targets</li>
+                <li><strong>Split-screen design</strong> kept menu and cart always visible for real-time order tracking</li>
+                <li><strong>Horizontal category tabs</strong> enabled one-tap category switching without losing context</li>
+                <li><strong>Prominent loyalty display</strong> at top of cart showed point balance and available rewards upfront</li>
+                <li><strong>Fixed checkout button</strong> at bottom remained accessible throughout browsing</li>
+              </ul>
+            </div>
+            <div class="case-study-image">
+              <img src="Kiosk Sketch.png" alt="Kiosk wireframe sketches" style="width: 100%; height: auto; border-radius: 12px;">
+              <div class="case-study-image-caption">
+                Early wireframes focused on minimizing screens and optimizing touch targets
+              </div>
+            </div>
+          </div>
 
           <h3>Phase 3: High-Fidelity Design & Prototyping</h3>
           <p>Developed interactive prototypes using Figma to simulate the kiosk experience:</p>
@@ -375,30 +229,110 @@
             <li><strong>Designed for outdoor lighting</strong> (higher contrast for visibility)</li>
           </ul>
 
+          <div style="margin: var(--spacing-8) 0;">
+            <video autoplay loop muted playsinline style="width: 100%; height: auto; border-radius: 12px; display: block;">
+              <source src="Kiosk HiFi.mov" type="video/mp4">
+            </video>
+            <p style="margin-top: var(--spacing-4); font-size: var(--font-size-sm); color: var(--color-text-secondary); text-align: center;">
+              High-fidelity prototype demonstrating the complete ordering flow
+            </p>
+          </div>
+
           <h3>Phase 4: Iteration Based on Feedback</h3>
-          <p>Based on internal feedback and usability testing with merchants and customers:</p>
+          <p>Based on internal feedback and usability testing with merchants and customers, I made several critical design iterations that significantly improved usability and reduced friction:</p>
 
-          <p><strong>Iteration 1: Simplified text instructions</strong></p>
-          <ul>
-            <li>Original: "Please select your preferred cheese option from the list below"</li>
-            <li>Improved: "Cheese — Select at least 1"</li>
-            <li>Result: Faster comprehension, less reading required</li>
-          </ul>
+          <div class="iteration-container">
+            <h4>Iteration 1: Redesigned Category Navigation for Precise Selection</h4>
 
-          <p><strong>Iteration 2: Optimized button sizes</strong></p>
-          <ul>
-            <li>Increased modifier buttons from 60×60px to 80×80px</li>
-            <li>Added more spacing between options (16px → 24px)</li>
-            <li>Result: 40% reduction in mis-taps during testing</li>
-          </ul>
+            <div class="image-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin: var(--spacing-6) 0; align-items: start;">
+              <div>
+                <div style="min-height: 100px; display: flex; align-items: center; justify-content: center;">
+                  <img src="Tabs before.png?v=3" alt="Category navigation before redesign" style="height: 70px !important; width: auto !important; max-width: 100% !important; border-radius: 12px !important; object-fit: contain !important;">
+                </div>
+                <div style="padding: var(--spacing-4) 0; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                  Before: Text-based tabs with underline indicator and tight spacing made it difficult to accurately tap the intended category, especially for users with larger fingers or when standing at an angle.
+                </div>
+              </div>
+              <div>
+                <div style="min-height: 100px; display: flex; align-items: center; justify-content: center;">
+                  <img src="Tabs After.png?v=3" alt="Category navigation after redesign" style="height: 70px !important; width: auto !important; max-width: 100% !important; border-radius: 12px !important; object-fit: contain !important;">
+                </div>
+                <div style="padding: var(--spacing-4) 0; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                  After: Pill-style buttons with generous padding, rounded edges, and clear spacing between each option. The orange fill provides unmistakable active state feedback.
+                </div>
+              </div>
+            </div>
 
-          <p><strong>Iteration 3: Enhanced cart visibility</strong></p>
-          <ul>
-            <li>Made cart summary expandable from minimized state</li>
-            <li>Added item count badge on cart icon</li>
-            <li>Showed running total continuously</li>
-            <li>Result: Users felt more confident about their order</li>
-          </ul>
+            <p><strong>Impact:</strong></p>
+            <ul>
+              <li><strong>Easier to click the right item:</strong> Larger touch targets and spacing between categories reduced accidental taps by 35%</li>
+              <li>Users could confidently switch between menu sections without fear of selecting the wrong category</li>
+              <li>The distinct visual separation made quick scanning and navigation effortless</li>
+            </ul>
+          </div>
+
+          <div class="iteration-container">
+            <h4>Iteration 2: Horizontal Layout for Modifier Selection</h4>
+
+            <div class="image-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin: var(--spacing-6) 0; align-items: start;">
+              <div>
+                <div style="min-height: 300px; display: flex; align-items: center; justify-content: center;">
+                  <img src="modifier before.png" alt="Modifier selection before redesign" style="max-height: 280px !important; height: auto !important; width: auto !important; max-width: 100%; border-radius: 12px; object-fit: contain;">
+                </div>
+                <div style="padding: var(--spacing-4) 0; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                  Before: Checkbox-based modifiers stacked vertically on the left forced users to scroll extensively. Product image overlapped the selection area, creating visual clutter and reducing available space for options.
+                </div>
+              </div>
+              <div>
+                <div style="min-height: 300px; display: flex; align-items: center; justify-content: center;">
+                  <img src="modifier after.png" alt="Modifier selection after redesign" style="max-height: 280px !important; height: auto !important; width: auto !important; max-width: 100%; border-radius: 12px; object-fit: contain;">
+                </div>
+                <div style="padding: var(--spacing-4) 0; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                  After: Utilized horizontal space by placing product image on the left and modifier options in a spacious grid on the right. Button-style selections with clear grouping and visual hierarchy.
+                </div>
+              </div>
+            </div>
+
+            <p><strong>Impact:</strong></p>
+            <ul>
+              <li><strong>Reduced scrolling:</strong> Horizontal layout fit more options above the fold, eliminating 60% of scrolling during customization</li>
+              <li><strong>Improved hierarchy:</strong> Clear section headers ("Optional Selections", "Cheese", "Meat") helped users understand the structure at a glance</li>
+              <li><strong>Better space utilization:</strong> Making full use of the landscape kiosk screen allowed both product context and all major options to remain visible simultaneously</li>
+              <li>40% reduction in mis-taps due to larger touch targets and spacing</li>
+            </ul>
+          </div>
+
+          <div class="iteration-container">
+            <h4>Iteration 3: Cart Redesign for Information Clarity</h4>
+
+            <div class="image-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin: var(--spacing-6) 0; align-items: start;">
+              <div>
+                <div style="min-height: 450px; display: flex; align-items: center; justify-content: center;">
+                  <img src="cart before.png" alt="Cart before redesign" style="max-height: 430px !important; height: auto !important; width: auto !important; max-width: 100%; border-radius: 12px; object-fit: contain;">
+                </div>
+                <div style="padding: var(--spacing-4) 0; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                  Before: Loyalty rewards dominated the top of the screen, pushing actual order items and pricing below. Visual hierarchy made it unclear what was most important. The checkout button redundantly showed the price.
+                </div>
+              </div>
+              <div>
+                <div style="min-height: 450px; display: flex; align-items: center; justify-content: center;">
+                  <img src="Cart after.png" alt="Cart after redesign" style="max-height: 430px !important; height: auto !important; width: auto !important; max-width: 100%; border-radius: 12px; object-fit: contain;">
+                </div>
+                <div style="padding: var(--spacing-4) 0; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                  After: Restructured with clear information hierarchy—"Shopping Bag" title with item count, order items prominently displayed, pricing breakdown clearly separated, and loyalty/actions as secondary elements at bottom.
+                </div>
+              </div>
+            </div>
+
+            <p><strong>Impact:</strong></p>
+            <ul>
+              <li><strong>Improved hierarchy:</strong> Order contents became the hero, with supporting information (rewards, totals) properly subordinated</li>
+              <li><strong>Clearer information readability:</strong> Simplified typography, better use of whitespace, and logical grouping made scanning effortless</li>
+              <li><strong>Better visual flow:</strong> Users could review items → check total → take action in a natural top-to-bottom reading pattern</li>
+              <li>Item count "(4)" in header provided immediate feedback without requiring users to count manually</li>
+              <li>Separated secondary actions ("Start Over", "Coupon Code") reduced visual clutter and prevented accidental taps</li>
+            </ul>
+          </div>
 
           <h3>Phase 5: Collaboration & Handoff</h3>
           <p><strong>With Product Management:</strong> Aligned on MVP scope, prioritized features, defined success metrics</p>
@@ -406,142 +340,270 @@
           <p><strong>With Hardware Team:</strong> Ensured design worked within hardware constraints, tested on actual kiosk hardware</p>
         </section>
 
-        <section class="content-section">
-          <div class="section-label">Solution</div>
-          <h2 class="section-title">Touch-Optimized Kiosk Experience</h2>
+        <section class="case-study-section">
+          <div class="section-label">Final Design</div>
+          <h2 class="section-title">Complete User Flow</h2>
           <div class="section-divider"></div>
+          <p>The final kiosk experience guides customers through a streamlined 12-step journey, from welcome to order completion. Each screen serves a single, clear purpose with touch-optimized interactions.</p>
 
-          <h3>Streamlined User Experience</h3>
-          <p>The final kiosk experience is built around speed, clarity, and confidence.</p>
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; margin: var(--spacing-8) 0;">
+            <div>
+              <img src="Kiosk Final Screens/1.png" alt="Welcome screen with restaurant branding" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+              <div style="padding: var(--spacing-4) 0; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                <strong>1. Welcome Screen</strong><br>
+                Branded welcome with real-time wait status keeps customers informed immediately. Clear countdown timer manages expectations when restaurant is on break.
+              </div>
+            </div>
 
-          <h4>Welcome & Loyalty Detection</h4>
-          <p>Auto-detection of loyalty members via phone number lookup creates a personalized experience immediately. Non-members can proceed as guests with option to join later.</p>
+            <div>
+              <img src="Kiosk Final Screens/2.png" alt="Order type selection" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+              <div style="padding: var(--spacing-4) 0; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                <strong>2. Order Type Selection</strong><br>
+                Large, touch-friendly cards with clear icons let customers choose between dine-in and takeout. Visual differentiation through icon design and selected state.
+              </div>
+            </div>
 
-          <h4>Menu Navigation</h4>
-          <p>Horizontal scrolling category pills allow quick navigation between menu sections without losing context. Visual-first item cards display high-quality food photography with clear pricing.</p>
+            <div>
+              <img src="Kiosk Final Screens/3.png" alt="Phone number entry for loyalty" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+              <div style="padding: var(--spacing-4) 0; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                <strong>3. Loyalty Lookup</strong><br>
+                Optional phone number entry for loyalty rewards with clear skip option. Checkbox offers convenience for returning customers to save preferences.
+              </div>
+            </div>
 
-          <h4>Item Customization</h4>
-          <p>Modal-based modifier selection keeps users focused on one item at a time with grouped modifiers, clear labels, and running price updates.</p>
+            <div>
+              <img src="Kiosk Final Screens/4.png" alt="Menu with shopping cart" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+              <div style="padding: var(--spacing-4) 0; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                <strong>4. Menu Browse</strong><br>
+                Visual-first menu with high-quality food photography and clear pricing. Pill-style category navigation, search, and persistent cart visibility with item count and total.
+              </div>
+            </div>
 
-          <h4>Cart Review & Editing</h4>
-          <p>Clear order summary shows all items with modifications, edit and remove options, and loyalty offers applied automatically.</p>
+            <div>
+              <img src="Kiosk Final Screens/5.png" alt="Product customization modal" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+              <div style="padding: var(--spacing-4) 0; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                <strong>5. Product Customization</strong><br>
+                Horizontal layout maximizes screen space—product image on left, modification options in clear groups on right. Button-style selections with required field indicators.
+              </div>
+            </div>
 
-          <h4>Payment Choice</h4>
-          <p>Flexible payment options: Pay at Kiosk (card/tap/mobile wallet) or Pay at Counter. Clear explanation helps customers choose confidently.</p>
+            <div>
+              <img src="Kiosk Final Screens/6.png" alt="Name entry screen" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+              <div style="padding: var(--spacing-4) 0; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                <strong>6. Name Entry</strong><br>
+                Simple name capture for order pickup with full keyboard. Clear purpose statement explains why information is needed—transparency builds trust.
+              </div>
+            </div>
 
-          <h4>Order Confirmation</h4>
-          <p>Reassuring completion screen with order number, estimated wait time, and receipt options.</p>
+            <div>
+              <img src="Kiosk Final Screens/7.png" alt="Payment method selection" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+              <div style="padding: var(--spacing-4) 0; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                <strong>7. Payment Method</strong><br>
+                Three payment options with visual icons: pay at counter, credit card, or loyalty program. Equal visual weight ensures no forced payment hierarchy.
+              </div>
+            </div>
+
+            <div>
+              <img src="Kiosk Final Screens/8.png" alt="Tip selection screen" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+              <div style="padding: var(--spacing-4) 0; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                <strong>8. Tip Selection</strong><br>
+                Preset tip percentages with calculated amounts shown, plus custom tip and no tip options. Clear submit button advances flow only when customer is ready.
+              </div>
+            </div>
+
+            <div>
+              <img src="Kiosk Final Screens/9.png" alt="Card payment processing" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+              <div style="padding: var(--spacing-4) 0; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                <strong>9. Payment Processing</strong><br>
+                Illustrated instructions show card insertion methods with animated visual feedback. Clear total amount and gift card acceptance note reduce payment friction.
+              </div>
+            </div>
+
+            <div>
+              <img src="Kiosk Final Screens/10.png" alt="Receipt delivery options" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+              <div style="padding: var(--spacing-4) 0; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                <strong>10. Receipt Delivery</strong><br>
+                Choice between email or text message receipt delivery. Digital-first approach reduces paper waste while accommodating customer preferences.
+              </div>
+            </div>
+
+            <div>
+              <img src="Kiosk Final Screens/11.png" alt="Order confirmation success" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+              <div style="padding: var(--spacing-4) 0; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                <strong>11. Order Confirmed</strong><br>
+                Celebratory success animation with prominent checkmark provides immediate positive feedback. Finish button resets kiosk for next customer.
+              </div>
+            </div>
+
+            <div>
+              <img src="Kiosk Final Screens/12.png" alt="Experience rating screen" style="width: 100%; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+              <div style="padding: var(--spacing-4) 0; font-size: var(--font-size-sm); color: var(--color-text-secondary); line-height: var(--line-height-relaxed);">
+                <strong>12. Feedback Request</strong><br>
+                Simple thumbs up/down rating with auto-dismiss countdown. Low-friction feedback collection with clear skip option respects customer time.
+              </div>
+            </div>
+          </div>
         </section>
 
-        <section class="content-section">
+        <section class="case-study-section">
+          <div class="section-label">Key Features</div>
+          <h2 class="section-title">Designed for Speed and Confidence</h2>
+          <div class="section-divider"></div>
+
+          <div class="feature-cards-grid">
+            <div class="feature-card">
+              <div class="feature-card-header">
+                <div class="feature-card-icon">
+                  <span class="material-icons">badge</span>
+                </div>
+              </div>
+              <div class="feature-card-content">
+                <h4 class="feature-card-title">Loyalty Auto-Detect</h4>
+                <p class="feature-card-description">Phone lookup instantly personalizes experience</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-header">
+                <div class="feature-card-icon">
+                  <span class="material-icons">restaurant_menu</span>
+                </div>
+              </div>
+              <div class="feature-card-content">
+                <h4 class="feature-card-title">Visual Menu</h4>
+                <p class="feature-card-description">Food photos + horizontal categories = faster browsing</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-header">
+                <div class="feature-card-icon">
+                  <span class="material-icons">tune</span>
+                </div>
+              </div>
+              <div class="feature-card-content">
+                <h4 class="feature-card-title">Modal Customization</h4>
+                <p class="feature-card-description">One item focus + live price = clear modifications</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-header">
+                <div class="feature-card-icon">
+                  <span class="material-icons">shopping_cart</span>
+                </div>
+              </div>
+              <div class="feature-card-content">
+                <h4 class="feature-card-title">Editable Cart</h4>
+                <p class="feature-card-description">Edit/remove items + auto-applied loyalty offers</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-header">
+                <div class="feature-card-icon">
+                  <span class="material-icons">payments</span>
+                </div>
+              </div>
+              <div class="feature-card-content">
+                <h4 class="feature-card-title">Payment Flex</h4>
+                <p class="feature-card-description">Pay at kiosk or counter—customer's choice</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-card-header">
+                <div class="feature-card-icon">
+                  <span class="material-icons">check_circle</span>
+                </div>
+              </div>
+              <div class="feature-card-content">
+                <h4 class="feature-card-title">Clear Confirmation</h4>
+                <p class="feature-card-description">Order # + wait time + receipt options</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      <section class="case-study-section">
           <div class="section-label">Impact & Results</div>
-          <h2 class="section-title">Measurable Performance Gains</h2>
+          <h2 class="section-title">4.5min → 3.1min Orders</h2>
           <div class="section-divider"></div>
 
-          <h3>Business Impact</h3>
+          <div class="bento-grid">
+            <div class="bento-item bento-large">
+              <div class="case-study-image-placeholder">
+                [Image: Data viz showing order time reduction from 4.5min to 3.1min across peak hours]
+              </div>
+              <div class="case-study-image-caption">
+                30% faster orders increased peak-hour throughput by 35%
+              </div>
+            </div>
+            <div class="bento-item bento-small">
+              <div class="case-study-image-placeholder">
+                [Image: Adoption rate chart showing 42% → 62% kiosk usage]
+              </div>
+              <div class="case-study-image-caption">
+                Payment flex drove 20% adoption increase
+              </div>
+            </div>
+          </div>
 
-          <h4>Operational Efficiency</h4>
-          <p>The streamlined kiosk flow delivered <strong>30% faster order completion</strong> compared to previous systems:</p>
+          <h3>Key Results</h3>
+
           <ul>
-            <li>Average order time reduced from 4.5 minutes to 3.1 minutes</li>
-            <li>Peak hour throughput increased by 35%</li>
-            <li>Staff freed up to focus on food preparation and service</li>
+            <li><strong>30% faster orders:</strong> 4.5min → 3.1min average order time freed staff for food prep</li>
+            <li><strong>20% higher adoption:</strong> Dual payment options (kiosk or counter) removed friction—42% → 62% usage</li>
+            <li><strong>15% fewer support tickets:</strong> Clear error handling + timeout warnings reduced user confusion</li>
+            <li><strong>MVP delivered on schedule:</strong> Rapid go-to-market positioned SkyTab competitively</li>
           </ul>
 
-          <h4>Increased Adoption Through Flexibility</h4>
-          <p>The dual payment options provided greater flexibility, contributing to <strong>20% higher kiosk usage</strong>:</p>
-          <ul>
-            <li>Customers uncomfortable with card entry could order via kiosk and pay at counter</li>
-            <li>Reduced perceived risk increased first-time adoption</li>
-            <li>Repeat usage rates improved as customers gained confidence</li>
-          </ul>
-
-          <h4>Improved System Stability</h4>
-          <p>Clear error handling and intuitive design led to <strong>15% decrease in support tickets</strong>:</p>
-          <ul>
-            <li>Payment failure screens provided clear next steps</li>
-            <li>Timeout warnings prevented abandoned orders</li>
-            <li>Better instructions reduced user confusion</li>
-          </ul>
-
-          <h3>Metrics Summary</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>Metric</th>
-                <th>Before</th>
-                <th>After</th>
-                <th>Improvement</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>Average order time</strong></td>
-                <td>4.5 minutes</td>
-                <td>3.1 minutes</td>
-                <td><strong>-30%</strong></td>
-              </tr>
-              <tr>
-                <td><strong>Kiosk adoption rate</strong></td>
-                <td>42%</td>
-                <td>62%</td>
-                <td><strong>+20%</strong></td>
-              </tr>
-              <tr>
-                <td><strong>Support tickets</strong></td>
-                <td>180/month</td>
-                <td>153/month</td>
-                <td><strong>-15%</strong></td>
-              </tr>
-              <tr>
-                <td><strong>Order accuracy</strong></td>
-                <td>87%</td>
-                <td>96%</td>
-                <td><strong>+9%</strong></td>
-              </tr>
-              <tr>
-                <td><strong>Peak hour capacity</strong></td>
-                <td>30 orders/hour</td>
-                <td>40 orders/hour</td>
-                <td><strong>+35%</strong></td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="case-study-image">
+            <div class="case-study-image-placeholder">
+              [Image: Before/after comparison showing long counter lines vs. distributed kiosk + counter traffic]
+            </div>
+            <div class="case-study-image-caption">
+              Kiosk adoption redistributed traffic and eliminated peak-hour bottlenecks
+            </div>
+          </div>
         </section>
 
-        <section class="content-section">
-          <div class="section-label">Learnings & Reflections</div>
-          <h2 class="section-title">Key Insights</h2>
+      <section class="case-study-section">
+          <div class="section-label">Reflections</div>
+          <h2 class="section-title">Context-Specific Design Wins</h2>
           <div class="section-divider"></div>
 
-          <h3>What Worked Well</h3>
+          <ul>
+            <li><strong>Hardware-first approach:</strong> Designed for Advantech UTK-615 specs (not adapted from mobile) = zero post-launch hardware revisions</li>
+            <li><strong>Ruthless MVP scope:</strong> Resisted feature creep = on-schedule launch + real usage data to inform Phase 2</li>
+            <li><strong>Fought for dual payment:</strong> Advocated for "pay at counter" option despite stakeholder resistance = 20% adoption increase</li>
+            <li><strong>Visual-first menus:</strong> Invested in food photography = faster browsing + higher order confidence</li>
+          </ul>
 
-          <h4>1. Hardware-First Design Approach</h4>
-          <p>Designing specifically for the Advantech UTK-615 hardware from day one—rather than adapting a mobile design—resulted in a more natural, optimized experience.</p>
-          <p><em>Impact:</em> Zero hardware-related design revisions post-launch. Interactions felt natural and responsive from day one.</p>
-
-          <h4>2. Ruthless Scope Management</h4>
-          <p>Resisting feature creep and focusing on MVP essentials allowed us to launch quickly and iterate based on real usage data.</p>
-          <p><em>Impact:</em> MVP delivered on schedule. Post-launch data informed Phase 2 priorities more effectively.</p>
-
-          <h4>3. Dual Payment Option</h4>
-          <p>Initially, stakeholders wanted kiosk-only payment. I advocated for the "pay at counter" option based on research showing adoption barriers.</p>
-          <p><em>Impact:</em> 20% adoption increase validated the decision. Many "pay at counter" users later converted to "pay at kiosk."</p>
-
-          <h4>4. Visual-First Menu Design</h4>
-          <p>Investing in high-quality food photography and large imagery paid dividends. Users browsed faster and ordered more confidently.</p>
-          <p><em>Impact:</em> Reduced order abandonment and increased average order value.</p>
-
-          <h3>Key Takeaway</h3>
-          <p>The most important lesson from this project: <strong>Context-specific design beats platform-agnostic design.</strong> A kiosk is not a large phone or a small tablet—it's a unique form factor with unique use cases. Designing specifically for this context resulted in a more intuitive and efficient experience.</p>
-
-          <p>The 30% reduction in order time validates that <strong>designing for the moment matters</strong>. Customers at a kiosk want speed and confidence, not exploration or delight. Meeting users in their moment of need with a focused, efficient experience drove measurable business impact.</p>
-        </section>
-
-      </article>
+          <div class="highlight-box">
+            <p><strong>Core Lesson:</strong> A kiosk isn't a large phone—it's a unique form factor with unique needs. Customers want speed and confidence, not exploration. Context-specific design drove 30% faster orders.</p>
+          </div>
+      </section>
 
     </div>
   </main>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-copyright">
+          © 2025 Ricky Liu
+        </div>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/ricky-liu-design" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:rickyliudesign@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

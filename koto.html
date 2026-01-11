@@ -3,80 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Koto Case Study | Ricky Liu</title>
-  <meta name="description" content="Designing a comprehensive automotive service platform that combines e-commerce and digital key technology for seamless vehicle ownership">
+  <title>Koto by Toyota Case Study | Ricky Liu</title>
+  <meta name="description" content="Designing a comprehensive automotive service platform for Toyota in Japan that combines e-commerce and digital key technology for seamless vehicle ownership">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=57">
+  <link rel="stylesheet" href="hero-section.css">
+  <link rel="stylesheet" href="koto.css">
+  <script src="navigation.js" defer></script>
 </head>
-<body>
+<body class="case-study-page">
 
   <nav class="navigation">
     <div class="nav-container">
       <div class="nav-logo">Ricky Liu</div>
       <div class="nav-links">
         <a href="index.html" class="nav-link">Work</a>
-        <a href="#" class="nav-link">About</a>
-        <a href="#" class="nav-link">Contact</a>
+        <a href="#" class="nav-link">CV</a>
+        <a href="contact.html" class="nav-link">Contact</a>
       </div>
     </div>
   </nav>
 
   <main>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content-wrapper">
+        <div class="hero-main">
+          <div class="hero-text">
+            <h1 class="hero-title">Koto by Toyota: Reimagining the Automotive Service Experience</h1>
+            <p class="hero-subtitle">Designing a unified platform that combines automotive e-commerce with contactless digital key technology to modernize vehicle ownership</p>
+            <div class="hero-details">
+              <div class="hero-detail-item">Product Designer</div>
+              <div class="hero-detail-item">iOS & Web</div>
+              <div class="hero-detail-item">2024</div>
+            </div>
+          </div>
+          <div class="hero-image-container">
+            <div class="hero-image-placeholder">
+              Product Screenshot
+            </div>
+          </div>
+        </div>
+        <div class="hero-metrics">
+          <div class="hero-metric-card">
+            <div class="hero-metric-value">45%</div>
+            <p class="hero-metric-label">Increase in Service Bookings</p>
+          </div>
+          <div class="hero-metric-card">
+            <div class="hero-metric-value">82%</div>
+            <p class="hero-metric-label">Digital Key Adoption</p>
+          </div>
+          <div class="hero-metric-card">
+            <div class="hero-metric-value">3.5x</div>
+            <p class="hero-metric-label">Faster Checkout Flow</p>
+          </div>
+          <div class="hero-metric-card">
+            <div class="hero-metric-value">4.7/5</div>
+            <p class="hero-metric-label">App Store Rating</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="container">
-
-      <header class="case-study-header">
-        <h1 class="case-study-title">Koto: Reimagining the Automotive Service Experience</h1>
-        <p class="case-study-subtitle">Designing a unified platform that combines automotive e-commerce with contactless digital key technology to modernize vehicle ownership</p>
-
-        <div class="case-study-meta">
-          <div class="meta-item">
-            <div class="meta-label">Role</div>
-            <div class="meta-value">Product Designer</div>
-          </div>
-          <div class="meta-item">
-            <div class="meta-label">Platform</div>
-            <div class="meta-value">iOS & Web</div>
-          </div>
-          <div class="meta-item">
-            <div class="meta-label">Year</div>
-            <div class="meta-value">2024</div>
-          </div>
-        </div>
-
-        <div class="impact-cards">
-          <div class="impact-card">
-            <span class="impact-icon">🚗</span>
-            <div class="impact-value">45%</div>
-            <div class="impact-label">Increase in Service Bookings</div>
-          </div>
-          <div class="impact-card">
-            <span class="impact-icon">🔑</span>
-            <div class="impact-value">82%</div>
-            <div class="impact-label">Digital Key Adoption</div>
-          </div>
-          <div class="impact-card">
-            <span class="impact-icon">⚡</span>
-            <div class="impact-value">3.5x</div>
-            <div class="impact-label">Faster Checkout Flow</div>
-          </div>
-          <div class="impact-card">
-            <span class="impact-icon">⭐</span>
-            <div class="impact-value">4.7/5</div>
-            <div class="impact-label">App Store Rating</div>
-          </div>
-        </div>
-      </header>
 
       <section class="case-study-section">
         <div class="section-label">Overview</div>
         <h2 class="section-title">Modernizing Vehicle Ownership</h2>
         <div class="section-divider"></div>
-        <p>Koto is a comprehensive automotive service platform designed to modernize the vehicle ownership experience. The app combines two critical features: an online shop for automotive services and products, and a digital key system that enables contactless vehicle access and control.</p>
+        <p>Koto is a comprehensive automotive service platform created for Toyota in Japan to modernize the vehicle ownership experience. The app combines two critical features: an online shop for automotive services and products, and a digital key system that enables contactless vehicle access and control.</p>
 
-        <p>The platform serves vehicle owners who want convenient access to automotive services while eliminating the friction of traditional physical keys and in-person service scheduling.</p>
+        <p>Developed specifically for the Japanese market, the platform serves Toyota vehicle owners who want convenient access to automotive services while eliminating the friction of traditional physical keys and in-person service scheduling.</p>
       </section>
 
       <section class="case-study-section">
@@ -100,25 +101,54 @@
         <div class="section-divider"></div>
         <p>Through user research with vehicle owners and analysis of existing automotive service platforms, I identified key pain points:</p>
 
-        <div class="challenge-list">
-          <div class="challenge-item">
-            <h3>❌ Fragmented Service Experience</h3>
-            <p>Vehicle owners had to use multiple apps and websites to schedule maintenance, purchase products, and manage vehicle features. This created friction and reduced engagement with automotive services.</p>
+        <div class="bento-features">
+          <div class="bento-feature bento-feature-main">
+            <div class="feature-card-icon" style="background: rgba(239, 68, 68, 0.15);">
+              <span class="material-icons" style="color: #f87171;">apps</span>
+            </div>
+            <div class="bento-feature-content">
+              <h4>Fragmented Service Experience</h4>
+              <p>Vehicle owners had to use multiple apps and websites to schedule maintenance, purchase products, and manage vehicle features. This created friction and reduced engagement with automotive services.</p>
+            </div>
           </div>
 
-          <div class="challenge-item">
-            <h3>❌ Complex Booking Flows</h3>
-            <p>Traditional service scheduling required phone calls, multiple form submissions, and back-and-forth communication. Users wanted instant booking with transparent pricing and availability.</p>
+          <div class="bento-feature bento-feature-side">
+            <div class="feature-card-icon" style="background: rgba(239, 68, 68, 0.15);">
+              <span class="material-icons" style="color: #f87171;">sync_problem</span>
+            </div>
+            <div class="bento-feature-content">
+              <h4>Complex Booking Flows</h4>
+              <p>Traditional service scheduling required phone calls, multiple form submissions, and back-and-forth communication. Users wanted instant booking with transparent pricing and availability.</p>
+            </div>
           </div>
 
-          <div class="challenge-item">
-            <h3>❌ Physical Key Limitations</h3>
-            <p>Users struggled with managing physical keys—losing them, sharing with family members, or needing spare keys for service appointments. They wanted modern, digital solutions.</p>
+          <div class="bento-feature bento-feature-half">
+            <div class="feature-card-icon" style="background: rgba(239, 68, 68, 0.15);">
+              <span class="material-icons" style="color: #f87171;">key_off</span>
+            </div>
+            <div class="bento-feature-content">
+              <h4>Physical Key Limitations</h4>
+              <p>Users struggled with managing physical keys—losing them, sharing with family members, or needing spare keys for service appointments. They wanted modern, digital solutions.</p>
+            </div>
           </div>
 
-          <div class="challenge-item">
-            <h3>❌ Lack of Service Transparency</h3>
-            <p>Unclear pricing, hidden fees, and uncertainty about service quality made users hesitant to book automotive services through digital platforms.</p>
+          <div class="bento-feature bento-feature-half">
+            <div class="feature-card-icon" style="background: rgba(239, 68, 68, 0.15);">
+              <span class="material-icons" style="color: #f87171;">visibility_off</span>
+            </div>
+            <div class="bento-feature-content">
+              <h4>Lack of Service Transparency</h4>
+              <p>Unclear pricing, hidden fees, and uncertainty about service quality made users hesitant to book automotive services through digital platforms.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-study-image">
+          <div class="case-study-image-placeholder">
+            [Image: User journey map showing pain points across fragmented automotive service experience]
+          </div>
+          <div class="case-study-image-caption">
+            Research revealed multiple friction points in the traditional automotive service journey
           </div>
         </div>
       </section>
@@ -129,17 +159,25 @@
         <div class="section-divider"></div>
         <p>After defining the problem and pain points, my team worked together and came up with ideas, such as having an onboarding survey to better understand the users' needs for services. Combining with the client's directions, the app would have 2 main features:</p>
 
-        <div class="principles-grid">
-          <div class="principle-card">
-            <div class="principle-icon">🛒</div>
-            <h3>Online Shop</h3>
-            <p>Allows users to browse, select, and purchase various automotive services and products directly from the app</p>
+        <div class="bento-features">
+          <div class="bento-feature bento-feature-main">
+            <div class="feature-card-icon" style="background: rgba(34, 197, 94, 0.15);">
+              <span class="material-icons" style="color: #4ade80;">storefront</span>
+            </div>
+            <div class="bento-feature-content">
+              <h4>Online Shop</h4>
+              <p>Allows users to browse, select, and purchase various automotive services and products directly from the app</p>
+            </div>
           </div>
 
-          <div class="principle-card">
-            <div class="principle-icon">🔑</div>
-            <h3>Digital Key</h3>
-            <p>Enhance vehicle access and control via the mobile app, offering users a contactless, secure way to unlock and start their vehicles.</p>
+          <div class="bento-feature bento-feature-side">
+            <div class="feature-card-icon" style="background: rgba(34, 197, 94, 0.15);">
+              <span class="material-icons" style="color: #4ade80;">vpn_key</span>
+            </div>
+            <div class="bento-feature-content">
+              <h4>Digital Key</h4>
+              <p>Enhance vehicle access and control via the mobile app, offering users a contactless, secure way to unlock and start their vehicles.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -177,6 +215,15 @@
           <li><strong>Persistent navigation:</strong> Settings, favorites, and account access available throughout the experience</li>
           <li><strong>Cross-platform continuity:</strong> Seamless handoff between mobile app and web experience</li>
         </ul>
+
+        <div class="case-study-image">
+          <div class="case-study-image-placeholder">
+            [Image: Information architecture diagram showing native app features (red border) and web view flows (green border)]
+          </div>
+          <div class="case-study-image-caption">
+            Dual-path architecture separates native features from e-commerce while maintaining seamless integration
+          </div>
+        </div>
       </section>
 
       <section class="case-study-section">
@@ -205,21 +252,120 @@
 
           <div class="feature-details">
             <h4>Service Categories:</h4>
-            <ul>
-              <li><strong>Maintenance services:</strong> Oil changes, tire rotations, brake inspections</li>
-              <li><strong>Repair services:</strong> Diagnostics, part replacements, body work</li>
-              <li><strong>Enhancement services:</strong> Detailing, window tinting, accessories installation</li>
-              <li><strong>Products:</strong> Parts, accessories, cleaning supplies</li>
-            </ul>
 
-            <h4>Discovery Features:</h4>
-            <ul>
-              <li>Smart search with vehicle-specific filtering</li>
-              <li>Service bundling suggestions (e.g., oil change + tire rotation)</li>
-              <li>Price comparison across service providers</li>
-              <li>Availability calendar with real-time scheduling</li>
-              <li>Service provider ratings and reviews</li>
-            </ul>
+            <div class="feature-cards-grid">
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <div class="feature-card-icon">
+                    <span class="material-icons">build</span>
+                  </div>
+                </div>
+                <div class="feature-card-content">
+                  <h5 class="feature-card-title">Maintenance Services</h5>
+                  <p class="feature-card-description">Oil changes, tire rotations, brake inspections</p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <div class="feature-card-icon">
+                    <span class="material-icons">handyman</span>
+                  </div>
+                </div>
+                <div class="feature-card-content">
+                  <h5 class="feature-card-title">Repair Services</h5>
+                  <p class="feature-card-description">Diagnostics, part replacements, body work</p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <div class="feature-card-icon">
+                    <span class="material-icons">auto_awesome</span>
+                  </div>
+                </div>
+                <div class="feature-card-content">
+                  <h5 class="feature-card-title">Enhancement Services</h5>
+                  <p class="feature-card-description">Detailing, window tinting, accessories installation</p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <div class="feature-card-icon">
+                    <span class="material-icons">shopping_bag</span>
+                  </div>
+                </div>
+                <div class="feature-card-content">
+                  <h5 class="feature-card-title">Products</h5>
+                  <p class="feature-card-description">Parts, accessories, cleaning supplies</p>
+                </div>
+              </div>
+            </div>
+
+            <h4 style="margin-top: var(--spacing-12);">Discovery Features:</h4>
+
+            <div class="feature-cards-grid">
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <div class="feature-card-icon">
+                    <span class="material-icons">search</span>
+                  </div>
+                </div>
+                <div class="feature-card-content">
+                  <h5 class="feature-card-title">Smart Search</h5>
+                  <p class="feature-card-description">Vehicle-specific filtering to find exactly what you need</p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <div class="feature-card-icon">
+                    <span class="material-icons">dynamic_feed</span>
+                  </div>
+                </div>
+                <div class="feature-card-content">
+                  <h5 class="feature-card-title">Service Bundling</h5>
+                  <p class="feature-card-description">Suggestions like oil change + tire rotation for better value</p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <div class="feature-card-icon">
+                    <span class="material-icons">compare_arrows</span>
+                  </div>
+                </div>
+                <div class="feature-card-content">
+                  <h5 class="feature-card-title">Price Comparison</h5>
+                  <p class="feature-card-description">Compare costs across multiple service providers</p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <div class="feature-card-icon">
+                    <span class="material-icons">event_available</span>
+                  </div>
+                </div>
+                <div class="feature-card-content">
+                  <h5 class="feature-card-title">Real-Time Scheduling</h5>
+                  <p class="feature-card-description">Availability calendar with instant booking</p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <div class="feature-card-icon">
+                    <span class="material-icons">star_rate</span>
+                  </div>
+                </div>
+                <div class="feature-card-content">
+                  <h5 class="feature-card-title">Ratings & Reviews</h5>
+                  <p class="feature-card-description">Service provider ratings to help you choose confidently</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -229,15 +375,70 @@
 
           <div class="feature-details">
             <h4>Checkout Optimizations:</h4>
-            <ul>
-              <li><strong>Saved payment methods:</strong> One-tap purchasing with secure stored cards</li>
-              <li><strong>Appointment pre-selection:</strong> Available time slots shown before checkout</li>
-              <li><strong>Vehicle auto-fill:</strong> Pre-populated vehicle details from onboarding survey</li>
-              <li><strong>Order summary:</strong> Clear breakdown of services, fees, and total cost</li>
-              <li><strong>Confirmation & calendar sync:</strong> Automatic appointment added to device calendar</li>
-            </ul>
 
-            <h4>Impact:</h4>
+            <div class="feature-cards-grid">
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <div class="feature-card-icon">
+                    <span class="material-icons">credit_card</span>
+                  </div>
+                </div>
+                <div class="feature-card-content">
+                  <h5 class="feature-card-title">Saved Payment Methods</h5>
+                  <p class="feature-card-description">One-tap purchasing with secure stored cards</p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <div class="feature-card-icon">
+                    <span class="material-icons">schedule</span>
+                  </div>
+                </div>
+                <div class="feature-card-content">
+                  <h5 class="feature-card-title">Appointment Pre-Selection</h5>
+                  <p class="feature-card-description">Available time slots shown before checkout</p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <div class="feature-card-icon">
+                    <span class="material-icons">directions_car</span>
+                  </div>
+                </div>
+                <div class="feature-card-content">
+                  <h5 class="feature-card-title">Vehicle Auto-Fill</h5>
+                  <p class="feature-card-description">Pre-populated vehicle details from onboarding survey</p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <div class="feature-card-icon">
+                    <span class="material-icons">receipt_long</span>
+                  </div>
+                </div>
+                <div class="feature-card-content">
+                  <h5 class="feature-card-title">Order Summary</h5>
+                  <p class="feature-card-description">Clear breakdown of services, fees, and total cost</p>
+                </div>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-card-header">
+                  <div class="feature-card-icon">
+                    <span class="material-icons">event</span>
+                  </div>
+                </div>
+                <div class="feature-card-content">
+                  <h5 class="feature-card-title">Calendar Sync</h5>
+                  <p class="feature-card-description">Automatic appointment added to device calendar</p>
+                </div>
+              </div>
+            </div>
+
+            <h4 style="margin-top: var(--spacing-12);">Impact:</h4>
             <p>The streamlined checkout flow achieved <strong>3.5x faster completion time</strong> compared to traditional phone-based booking, reducing average booking time from 15 minutes to under 5 minutes.</p>
           </div>
         </div>
@@ -257,6 +458,33 @@
 
             <h4>Service Integration:</h4>
             <p>When booking a service appointment, users can grant time-limited digital key access to service centers, allowing technicians to retrieve and return vehicles without physical key handoff. This feature achieved <strong>82% adoption</strong> among users who had completed at least one service appointment.</p>
+          </div>
+        </div>
+
+        <div class="bento-grid">
+          <div class="bento-item bento-large">
+            <div class="case-study-image-placeholder">
+              [Image: Service marketplace showing automotive services with transparent pricing and ratings]
+            </div>
+            <div class="case-study-image-caption">
+              Clear pricing and availability made service discovery transparent and trustworthy
+            </div>
+          </div>
+          <div class="bento-item bento-small bento-tall">
+            <div class="case-study-image-placeholder">
+              [Image: Digital key interface showing unlock controls and key sharing options]
+            </div>
+            <div class="case-study-image-caption">
+              Digital key functionality achieved 82% adoption among active users
+            </div>
+          </div>
+          <div class="bento-item bento-wide">
+            <div class="case-study-image-placeholder">
+              [Image: Streamlined checkout flow screens showing 3-step booking process]
+            </div>
+            <div class="case-study-image-caption">
+              Optimized checkout reduced booking time from 15 minutes to under 5 minutes
+            </div>
           </div>
         </div>
 
@@ -308,6 +536,15 @@
           <li>Service recommendations based on mileage/time were highly valued but rarely available in existing platforms</li>
         </ul>
 
+        <div class="case-study-image">
+          <div class="case-study-image-placeholder">
+            [Image: Competitive analysis comparing Tesla app, Openbay, and other automotive service platforms]
+          </div>
+          <div class="case-study-image-caption">
+            Studied existing solutions to identify opportunities for differentiation
+          </div>
+        </div>
+
         <h3>Phase 2: Information Architecture & User Flows</h3>
         <p>I mapped out comprehensive user journeys for both primary features:</p>
 
@@ -346,6 +583,25 @@
           <li>Implemented proximity-based auto-unlock after field testing showed tap-to-unlock was too slow</li>
           <li>Redesigned service cards to emphasize availability and pricing (initially too text-heavy)</li>
         </ul>
+
+        <div class="image-grid">
+          <div class="case-study-image">
+            <div class="case-study-image-placeholder">
+              [Image: Before/after comparison of onboarding survey showing reduction from 8 to 4 questions]
+            </div>
+            <div class="case-study-image-caption">
+              Simplified onboarding increased completion rate while maintaining data quality
+            </div>
+          </div>
+          <div class="case-study-image">
+            <div class="case-study-image-placeholder">
+              [Image: Service card evolution showing initial text-heavy design vs. final visual-first layout]
+            </div>
+            <div class="case-study-image-caption">
+              Redesigned cards emphasized pricing and availability based on user feedback
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="case-study-section">
@@ -388,6 +644,38 @@
             <div class="result-metric">$125</div>
             <div class="result-label">Average Order Value</div>
             <p>35% higher than traditional phone bookings due to service bundling and product cross-selling</p>
+          </div>
+        </div>
+
+        <div class="bento-impact-grid">
+          <div class="bento-impact-large">
+            <div class="bento-impact-metric">3.5x</div>
+            <div class="bento-impact-label">Faster checkout experience</div>
+            <div class="bento-impact-description">Average booking completion time reduced from 15 minutes via phone to under 5 minutes in the app, removing friction from service scheduling.</div>
+          </div>
+          <div class="bento-impact-small">
+            <div class="bento-impact-metric">82%</div>
+            <div class="bento-impact-label">Digital key adoption</div>
+            <div class="bento-impact-description">Among users who completed at least one service appointment.</div>
+          </div>
+        </div>
+
+        <div class="bento-grid">
+          <div class="bento-item bento-medium">
+            <div class="case-study-image-placeholder">
+              [Image: Line graph showing 45% increase in service bookings over 6-month period]
+            </div>
+            <div class="case-study-image-caption">
+              Service bookings grew steadily as users discovered the convenience of digital scheduling
+            </div>
+          </div>
+          <div class="bento-item bento-medium">
+            <div class="case-study-image-placeholder">
+              [Image: Chart comparing booking completion times: 15 min (phone) vs 5 min (app)]
+            </div>
+            <div class="case-study-image-caption">
+              Streamlined checkout delivered 3.5x faster booking experience
+            </div>
           </div>
         </div>
       </section>
@@ -442,12 +730,25 @@
         </ul>
       </section>
 
-      <div class="case-study-footer">
-        <a href="index.html" class="back-link">← Back to Work</a>
-      </div>
-
     </div>
   </main>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-copyright">
+          © 2025 Ricky Liu
+        </div>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/ricky-liu-design" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:rickyliudesign@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

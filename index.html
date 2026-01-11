@@ -8,8 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=57">
+  <script src="navigation.js" defer></script>
+  <script src="script.js?v=3" defer></script>
+  <script src="chat-widget.js" defer></script>
 </head>
 <body>
 
@@ -18,8 +21,8 @@
       <div class="nav-logo">Ricky Liu</div>
       <div class="nav-links">
         <a href="index.html" class="nav-link active">Work</a>
-        <a href="#" class="nav-link">About</a>
-        <a href="#" class="nav-link">Contact</a>
+        <a href="#" class="nav-link">CV</a>
+        <a href="contact.html" class="nav-link">Contact</a>
       </div>
     </div>
   </nav>
@@ -30,15 +33,20 @@
       <section class="hero">
         <h1 class="hero-name"><span class="hero-name-gradient">Hi! I'm Ricky</span> 👋🏼</h1>
         <p class="hero-description">Product designer crafting intuitive experiences that drive measurable business impact.</p>
+        <a href="mailto:rickyliudesign@gmail.com" class="hero-cta">Connect with me</a>
       </section>
 
       <section class="work-section">
-        <div class="project-cards">
+        <div class="project-cards-container">
+          <div class="project-cards">
 
-          <a href="skytab-onboarding.html" class="project-card">
+            <a href="skytab-onboarding.html" class="project-card project-card-skytab">
             <div class="project-card-inner">
-              <div class="project-image">
-                <img src="skytab-onboarding-cover.png" alt="SkyTab Onboarding" style="width: 100%; height: 100%; object-fit: cover;">
+              <div class="project-image project-image-custom">
+                <div class="onboarding-hero-home" style="position: relative;">
+                  <img src="grow-my-business-dashboard.png" alt="Grow My Business dashboard" style="width: 80%; height: auto; margin: 0 auto; display: block; position: relative; z-index: 1;">
+                  <img src="BrowserPreview_tmp.gif" alt="" class="onboarding-gif-overlay" style="position: absolute; width: 73.15%; height: auto; top: calc(50% - 90px); left: calc(50% + 3px); transform: translate(-50%, -50%); z-index: 2; pointer-events: none; filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.25)) drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));">
+                </div>
               </div>
               <div class="project-content">
                 <h2 class="project-title">SkyTab Onboarding</h2>
@@ -46,7 +54,9 @@
                 <div class="project-tags">
                   <span class="tag">Product Design</span>
                   <span class="tag">UX Research</span>
-                  <span class="tag">System Design</span>
+                  <span class="tag">Dashboard</span>
+                  <span class="tag">B2B</span>
+                  <span class="tag">SaaS Product</span>
                 </div>
               </div>
             </div>
@@ -54,11 +64,12 @@
 
           <a href="skytab-kiosk.html" class="project-card">
             <div class="project-card-inner">
-              <div class="project-image">
-                <img src="skytab-kiosk-cover.png" alt="SkyTab Kiosk" style="width: 100%; height: 100%; object-fit: cover;">
+              <div class="project-image" style="position: relative;">
+                <img src="skytab-kiosk-cover-new.png" alt="Shift4 Kiosk" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="Kiosk.gif" alt="Kiosk Demo" style="position: absolute; top: calc(50% + 10px); left: 50%; transform: translate(-50%, -50%); width: 60%; height: auto; z-index: 2;">
               </div>
               <div class="project-content">
-                <h2 class="project-title">SkyTab Kiosk</h2>
+                <h2 class="project-title">Shift4 Kiosk</h2>
                 <p class="project-description">Self-ordering kiosk that reduced order time by 30% and increased adoption by 20% through intuitive touch-first design</p>
                 <div class="project-tags">
                   <span class="tag">Product Design</span>
@@ -72,10 +83,10 @@
           <a href="koto.html" class="project-card">
             <div class="project-card-inner">
               <div class="project-image">
-                <img src="koto-cover.png" alt="Koto" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="koto-cover-new.png" alt="Koto by Toyota" style="width: 100%; height: 100%; object-fit: cover;">
               </div>
               <div class="project-content">
-                <h2 class="project-title">Koto</h2>
+                <h2 class="project-title">Koto by Toyota</h2>
                 <p class="project-description">Automotive service platform combining e-commerce and digital key technology—45% more bookings and 82% digital key adoption</p>
                 <div class="project-tags">
                   <span class="tag">Product Design</span>
@@ -86,29 +97,31 @@
             </div>
           </a>
 
-        </div>
-      </section>
+          </div>
 
-      <section style="margin-top: var(--spacing-24); padding: var(--spacing-16) 0; border-top: 1px solid var(--color-border);">
-        <div style="max-width: 600px;">
-          <h2>About</h2>
-          <p>I'm a product designer focused on creating experiences that balance user needs with business goals. My approach combines strategic thinking, user research, and design systems to deliver measurable impact.</p>
-          <p>Currently designing onboarding and merchant experiences that help thousands of businesses succeed.</p>
+          <section style="margin-top: var(--spacing-24); padding: var(--spacing-16) 0;">
+            <div style="max-width: 600px;">
+              <h2>About</h2>
+              <p>Senior Product Designer with 10+ years of experience shipping complex B2B SaaS platforms. I specialize in design systems, user-centered workflows, and simplifying data-rich, regulated experiences across web, desktop, and mobile.</p>
+              <p>Proven track record of delivering measurable results: +60% adoption, -40% escalations, 50% faster handoffs. I leverage AI technology and tools to enhance design efficiency and explore innovative solutions. Currently designing onboarding and merchant experiences at Shift4, helping 20,000+ businesses succeed.</p>
+            </div>
+          </section>
+
         </div>
       </section>
 
     </div>
   </main>
 
-  <footer style="border-top: 1px solid var(--color-border); margin-top: var(--spacing-24); padding: var(--spacing-12) 0;">
+  <footer>
     <div class="container">
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--gap-lg);">
-        <div style="color: var(--color-text-tertiary); font-size: var(--font-size-sm);">
+      <div class="footer-content">
+        <div class="footer-copyright">
           © 2025 Ricky Liu
         </div>
-        <div style="display: flex; gap: var(--gap-lg);">
-          <a href="#" style="color: var(--color-text-secondary); font-size: var(--font-size-sm);">LinkedIn</a>
-          <a href="#" style="color: var(--color-text-secondary); font-size: var(--font-size-sm);">Email</a>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/ricky-liu-design" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:rickyliudesign@gmail.com">Email</a>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-# SkyTab Kiosk: Streamlining Restaurant Self-Service Ordering
+# Shift4 Kiosk: Streamlining Restaurant Self-Service Ordering
 
 > Designing an intuitive self-ordering kiosk that reduced order time by 30% and increased kiosk adoption by 20%
 
@@ -190,28 +190,59 @@ Prototypes were tested on the actual hardware to ensure:
 
 ### Phase 4: Iteration Based on Feedback
 
-Based on internal feedback and usability testing with merchants and customers, I iterated on the designs:
+Based on internal feedback and usability testing with merchants and customers, I made several critical design iterations that significantly improved usability and reduced friction:
 
-**Iteration 1: Simplified text instructions**
-- Original: "Please select your preferred cheese option from the list below"
-- Improved: "Cheese — Select at least 1"
-- Result: Faster comprehension, less reading required
+#### Iteration 1: Redesigned Category Navigation for Precise Selection
 
-**Iteration 2: Optimized button sizes**
-- Increased modifier buttons from 60×60px to 80×80px
-- Added more spacing between options (16px → 24px)
-- Result: 40% reduction in mis-taps during testing
+**Before:** Text-based tabs with underline indicator and tight spacing made it difficult to accurately tap the intended category, especially for users with larger fingers or when standing at an angle.
 
-**Iteration 3: Enhanced cart visibility**
-- Made cart summary expandable from minimized state
-- Added item count badge on cart icon
-- Showed running total continuously
-- Result: Users felt more confident about their order before checkout
+![Tabs Before](Tabs before.png)
 
-**Iteration 4: Clearer payment options**
-- Added icons and descriptions to payment choice screen
-- Explained "Pay Up Front" vs "Credit Payment" more clearly
-- Result: Eliminated confusion about payment timing
+**After:** Pill-style buttons with generous padding, rounded edges, and clear spacing between each option. The orange fill provides unmistakable active state feedback.
+
+![Tabs After](Tabs After.png)
+
+**Impact:**
+- **Easier to click the right item:** Larger touch targets and spacing between categories reduced accidental taps by 35%
+- Users could confidently switch between menu sections without fear of selecting the wrong category
+- The distinct visual separation made quick scanning and navigation effortless
+
+---
+
+#### Iteration 2: Horizontal Layout for Modifier Selection
+
+**Before:** Checkbox-based modifiers stacked vertically on the left forced users to scroll extensively. Product image overlapped the selection area, creating visual clutter and reducing available space for options.
+
+![Modifier Before](modifier before.png)
+
+**After:** Utilized horizontal space by placing product image on the left and modifier options in a spacious grid on the right. Button-style selections with clear grouping and visual hierarchy.
+
+![Modifier After](modifier after.png)
+
+**Impact:**
+- **Reduced scrolling:** Horizontal layout fit more options above the fold, eliminating 60% of scrolling during customization
+- **Improved hierarchy:** Clear section headers ("Optional Selections", "Cheese", "Meat") helped users understand the structure at a glance
+- **Better space utilization:** Making full use of the landscape kiosk screen allowed both product context and all major options to remain visible simultaneously
+- 40% reduction in mis-taps due to larger touch targets and spacing
+
+---
+
+#### Iteration 3: Cart Redesign for Information Clarity
+
+**Before:** Loyalty rewards dominated the top of the screen, pushing actual order items and pricing below. Visual hierarchy made it unclear what was most important. The checkout button redundantly showed the price.
+
+![Cart Before](cart before.png)
+
+**After:** Restructured with clear information hierarchy—"Shopping Bag" title with item count, order items prominently displayed, pricing breakdown clearly separated, and loyalty/actions as secondary elements at bottom.
+
+![Cart After](Cart after.png)
+
+**Impact:**
+- **Improved hierarchy:** Order contents became the hero, with supporting information (rewards, totals) properly subordinated
+- **Clearer information readability:** Simplified typography, better use of whitespace, and logical grouping made scanning effortless
+- **Better visual flow:** Users could review items → check total → take action in a natural top-to-bottom reading pattern
+- Item count "(4)" in header provided immediate feedback without requiring users to count manually
+- Separated secondary actions ("Start Over", "Coupon Code") reduced visual clutter and prevented accidental taps
 
 ### Phase 5: Collaboration & Handoff
 

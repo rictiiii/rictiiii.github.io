@@ -1,0 +1,189 @@
+/* SkyTab Kiosk Case Study - Custom Styles */
+/* Orange/Yellow accent color theme */
+
+:root {
+  --color-accent: #F8A900;
+  --color-background-accent: #F8A900;
+}
+
+/* Navigation - Yellow to Orange Gradient */
+.navigation {
+  background: linear-gradient(135deg, #FDE047 0%, #FB923C 100%);
+  border-bottom: none;
+}
+
+.nav-container {
+  border-bottom: none;
+}
+
+.nav-logo {
+  color: white;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: white;
+}
+
+/* Hero Section - Yellow to Orange Gradient */
+.hero-section {
+  background: linear-gradient(135deg, #FDE047 0%, #FB923C 100%);
+}
+
+/* Override feature card hover border */
+.case-study-section:not(.section-accent) .feature-card:hover {
+  border-color: rgba(248, 169, 0, 0.25);
+}
+
+/* Override feature card accent bar */
+.case-study-section:not(.section-accent) .feature-card::before {
+  background: linear-gradient(180deg, #F8A900 0%, transparent 100%);
+}
+
+/* Override tag colors */
+.tag {
+  color: #F8A900;
+  border-color: rgba(248, 169, 0, 0.15);
+}
+
+.tag:hover {
+  color: #F8A900;
+  border-color: rgba(248, 169, 0, 0.25);
+}
+
+/* Iteration containers */
+.iteration-container {
+  background-color: #EAEAEA;
+  border-radius: 16px;
+  padding: var(--spacing-8);
+  margin: var(--spacing-8) 0;
+}
+
+/* Override text highlights */
+.text-highlight-blue {
+  color: #F8A900;
+}
+
+/* Override text highlights */
+::selection {
+  background: rgba(248, 169, 0, 0.15);
+}
+
+/* Override icon container and Material Icons color */
+.case-study-section:not(.section-accent) .feature-card-icon {
+  background: #F8A900;
+  width: 56px;
+  height: 56px;
+}
+
+.case-study-section:not(.section-accent) .feature-card-icon .material-icons {
+  color: white;
+  font-size: 24px;
+}
+
+/* Orange gradient for accent sections */
+.case-study-section.section-accent {
+  background:
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.25'/%3E%3C/svg%3E"),
+    linear-gradient(135deg, #FF8A51 0%, #FFDA7A 100%);
+}
+
+.case-study-section.section-accent::before {
+  background: radial-gradient(
+    circle at 30% 40%,
+    rgba(255, 218, 122, 0.6) 0%,
+    rgba(255, 218, 122, 0.4) 30%,
+    rgba(255, 218, 122, 0.2) 60%,
+    rgba(255, 218, 122, 0) 100%
+  );
+}
+
+.case-study-section.section-accent::after {
+  background: radial-gradient(
+    circle at 60% 50%,
+    rgba(255, 138, 81, 0.6) 0%,
+    rgba(255, 138, 81, 0.4) 30%,
+    rgba(255, 138, 81, 0.2) 60%,
+    rgba(255, 138, 81, 0) 100%
+  );
+}
+
+/* Remove alternating gray backgrounds for this page */
+.case-study-section:nth-child(even) {
+  background-color: transparent;
+}
+
+.case-study-section:nth-child(odd) {
+  background-color: transparent;
+}
+
+/* Override section divider color */
+.section-divider {
+  background: rgba(248, 169, 0, 0.2);
+}
+
+/* Bento grid feature icons */
+.bento-feature .feature-card-icon {
+  background: #F8A900;
+}
+
+.bento-feature .feature-card-icon .material-icons {
+  color: white;
+}
+
+/* Cards on orange gradient backgrounds */
+.case-study-section.section-accent .feature-card {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 1) !important;
+  box-shadow: inset 0 0 40px rgba(255, 255, 255, 1) !important;
+}
+
+.case-study-section.section-accent .bento-feature {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 1) !important;
+  box-shadow: inset 0 0 40px rgba(255, 255, 255, 1) !important;
+}
+
+.case-study-section.section-accent .feature-card-icon .material-icons {
+  color: white !important;
+}
+
+.case-study-section.section-accent .bento-feature .material-icons {
+  color: white !important;
+}
+
+.case-study-section.section-accent .feature-card-icon {
+  background: #F8A900 !important;
+  width: 48px !important;
+  height: 48px !important;
+}
+
+.case-study-section.section-accent .bento-feature .feature-card-icon {
+  background: #F8A900 !important;
+  width: 48px !important;
+  height: 48px !important;
+}
+
+/* Hover effects for cards on orange gradient backgrounds */
+.case-study-section.section-accent .feature-card:hover {
+  transform: translateY(-8px);
+  transition: transform 0.3s ease;
+}
+
+.case-study-section.section-accent .bento-feature:hover {
+  transform: translateY(-8px);
+  transition: transform 0.3s ease;
+}
+
+/* Remove gradient line on left edge for cards on orange gradient backgrounds */
+.case-study-section.section-accent .feature-card::before {
+  display: none !important;
+}
+
+.case-study-section.section-accent .bento-feature::before {
+  display: none !important;
+}

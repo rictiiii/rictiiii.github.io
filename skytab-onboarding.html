@@ -8,60 +8,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=56">
-  <script src="script.js?v=3" defer></script>
-  <script src="chat-widget.js" defer></script>
-  <style>
-    :root {
-      --color-accent: #0071E3;
-      --color-background-accent: #0071E3;
-    }
-    [data-theme="light"] {
-      --color-accent: #0071E3;
-      --color-background-accent: #0071E3;
-    }
-    [data-theme="dark"] {
-      --color-accent: #0071E3;
-      --color-background-accent: #0071E3;
-    }
-
-    /* Override feature card hover border - only for non-section-accent sections */
-    [data-theme="light"] .case-study-section:not(.section-accent) .feature-card:hover {
-      border-color: rgba(0, 113, 227, 0.25);
-    }
-
-    /* Override feature card accent bar - only for non-section-accent sections */
-    .case-study-section:not(.section-accent) .feature-card::before {
-      background: linear-gradient(180deg, #0071E3 0%, transparent 100%);
-    }
-
-    [data-theme="light"] .case-study-section:not(.section-accent) .feature-card::before {
-      background: linear-gradient(180deg, #0071E3 0%, transparent 100%);
-    }
-
-    /* Override tag colors */
-    .tag {
-      color: #0071E3;
-      border-color: rgba(0, 113, 227, 0.15);
-    }
-
-    .tag:hover {
-      color: #0071E3;
-      border-color: rgba(0, 113, 227, 0.25);
-    }
-
-    /* Override text highlights */
-    [data-theme="light"] ::selection {
-      background: rgba(0, 113, 227, 0.15);
-    }
-
-    [data-theme="dark"] ::selection {
-      background: rgba(0, 113, 227, 0.25);
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css?v=57">
+  <link rel="stylesheet" href="hero-section.css">
+  <link rel="stylesheet" href="skytab-onboarding.css">
+  <script src="navigation.js" defer></script>
 </head>
-<body>
+<body data-theme="light">
 
   <nav class="navigation">
     <div class="nav-container">
@@ -70,65 +22,53 @@
         <a href="index.html" class="nav-link">Work</a>
         <a href="#" class="nav-link">CV</a>
         <a href="contact.html" class="nav-link">Contact</a>
-        <button class="theme-switcher" aria-label="Toggle theme">
-          <div class="theme-switcher-track">
-            <div class="theme-switcher-stars">
-              <span class="star star-1"></span>
-              <span class="star star-2"></span>
-              <span class="star star-3"></span>
-            </div>
-            <div class="theme-switcher-toggle"></div>
-          </div>
-        </button>
       </div>
     </div>
   </nav>
 
   <main>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content-wrapper">
+        <div class="hero-main">
+          <div class="hero-text">
+            <h1 class="hero-title">SkyTab Onboarding: Reimagining Merchant Experience Across Lifecycle Stages</h1>
+            <p class="hero-subtitle">How a state-aware onboarding system helped 11,000+ merchants launch faster, saving 4.7 days per merchant and driving 18,000+ feature adoptions</p>
+            <div class="hero-details">
+              <div class="hero-detail-item">Product Design</div>
+              <div class="hero-detail-item">Web (MX Hub)</div>
+              <div class="hero-detail-item">2025</div>
+            </div>
+          </div>
+          <div class="hero-image-container">
+            <div class="hero-image-placeholder">
+              Product Screenshot
+            </div>
+          </div>
+        </div>
+        <div class="hero-metrics">
+          <div class="hero-metric-card">
+            <div class="hero-metric-value">11,000+</div>
+            <p class="hero-metric-label">Merchants launched through Launch Center</p>
+          </div>
+          <div class="hero-metric-card">
+            <div class="hero-metric-value">4.7 days</div>
+            <p class="hero-metric-label">Faster onboarding order confirmation</p>
+          </div>
+          <div class="hero-metric-card">
+            <div class="hero-metric-value">18,000+</div>
+            <p class="hero-metric-label">VAS features adopted in 2025</p>
+          </div>
+          <div class="hero-metric-card">
+            <div class="hero-metric-value">90%</div>
+            <p class="hero-metric-label">Bug resolution rate (283 resolved, 29 open)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="container">
-
-      <header class="case-study-header">
-        <h1 class="case-study-title">SkyTab Onboarding: Reimagining Merchant Experience Across Lifecycle Stages</h1>
-        <p class="case-study-subtitle">How a state-aware onboarding system helped 11,000+ merchants launch faster, saving 4.7 days per merchant and driving 18,000+ feature adoptions</p>
-
-        <div class="case-study-meta">
-          <div class="meta-item">
-            <div class="meta-label">Role</div>
-            <div class="meta-value">Product Designer</div>
-          </div>
-          <div class="meta-item">
-            <div class="meta-label">Platform</div>
-            <div class="meta-value">Web (MX Hub)</div>
-          </div>
-          <div class="meta-item">
-            <div class="meta-label">Year</div>
-            <div class="meta-value">2025</div>
-          </div>
-        </div>
-
-        <div class="impact-cards">
-          <div class="impact-card">
-            <span class="impact-icon">🚀</span>
-            <div class="impact-value">11,000+</div>
-            <div class="impact-label">Merchants launched through Launch Center</div>
-          </div>
-          <div class="impact-card">
-            <span class="impact-icon">⚡</span>
-            <div class="impact-value">4.7 days</div>
-            <div class="impact-label">Faster onboarding order confirmation</div>
-          </div>
-          <div class="impact-card">
-            <span class="impact-icon">🎯</span>
-            <div class="impact-value">18,000+</div>
-            <div class="impact-label">VAS features adopted in 2025</div>
-          </div>
-          <div class="impact-card">
-            <span class="impact-icon">✅</span>
-            <div class="impact-value">90%</div>
-            <div class="impact-label">Bug resolution rate (283 resolved, 29 open)</div>
-          </div>
-        </div>
-      </header>
 
       <article class="case-study-content">
 
@@ -295,6 +235,13 @@
             <li>Quick actions: Reschedule installation, Upload menus, View requirements</li>
           </ul>
 
+          <div class="case-study-image">
+            <img src="launch-dashboard.png" alt="Launch Center dashboard for pre-launch merchants">
+            <div class="case-study-image-caption">
+              Launch Center dashboard for merchants preparing to go live, featuring task checklist, installation countdown, and CSM information
+            </div>
+          </div>
+
           <h4>For Pre-Live Merchants</h4>
           <p><strong>Primary Focus:</strong> Education and feature discovery</p>
           <p><strong>Key Features:</strong></p>
@@ -305,6 +252,13 @@
             <li>Release notes and what's new</li>
             <li>Community resources and support links</li>
           </ul>
+
+          <div class="case-study-image">
+            <img src="onboarding-wizard-screens.png" alt="Onboarding wizard screens adapting to merchant state">
+            <div class="case-study-image-caption">
+              State-aware wizard screens that adapt content and tone based on merchant lifecycle stage
+            </div>
+          </div>
 
           <h4>For Live Merchants</h4>
           <p><strong>Primary Focus:</strong> Data, insights, and ongoing optimization</p>
@@ -317,26 +271,10 @@
             <li>Release notes with feature highlights</li>
           </ul>
 
-          <h3>Final Designs</h3>
-
-          <div class="case-study-image">
-            <img src="launch-dashboard.png" alt="Launch Center dashboard for pre-launch merchants">
-            <div class="case-study-image-caption">
-              Launch Center dashboard for merchants preparing to go live, featuring task checklist, installation countdown, and CSM information
-            </div>
-          </div>
-
           <div class="case-study-image">
             <img src="grow-my-business-dashboard.png" alt="Dashboard for live merchants with data and insights">
             <div class="case-study-image-caption">
               Dashboard for live merchants showcasing real-time data, feature discovery hub, and actionable insights
-            </div>
-          </div>
-
-          <div class="case-study-image">
-            <img src="onboarding-wizard-screens.png" alt="Onboarding wizard screens adapting to merchant state">
-            <div class="case-study-image-caption">
-              State-aware wizard screens that adapt content and tone based on merchant lifecycle stage
             </div>
           </div>
 

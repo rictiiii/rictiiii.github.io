@@ -1,3 +1,23 @@
+// Theme Switcher
+document.addEventListener('DOMContentLoaded', function() {
+  const themeSwitcher = document.querySelector('.theme-switcher');
+
+  // Check for saved theme preference or default to 'dark'
+  const currentTheme = localStorage.getItem('theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', currentTheme);
+
+  // Theme toggle handler
+  if (themeSwitcher) {
+    themeSwitcher.addEventListener('click', function() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+  }
+});
+
 // Scroll-progress based animations for project cards
 document.addEventListener('DOMContentLoaded', function() {
   const projectCards = document.querySelectorAll('.project-card');
@@ -63,4 +83,137 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Initial update
   updateCardTransforms();
+});
+
+// Back to top button
+document.addEventListener('DOMContentLoaded', function() {
+  const backToTopButton = document.querySelector('.back-to-top');
+
+  if (backToTopButton) {
+    // Show/hide button based on scroll position
+    function toggleBackToTop() {
+      if (window.scrollY > 400) {
+        backToTopButton.classList.add('visible');
+      } else {
+        backToTopButton.classList.remove('visible');
+      }
+    }
+
+    // Smooth scroll to top
+    backToTopButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Listen to scroll events
+    window.addEventListener('scroll', toggleBackToTop, { passive: true });
+
+    // Initial check
+    toggleBackToTop();
+  }
+});
+
+// Counter animation for impact cards
+document.addEventListener('DOMContentLoaded', function() {
+  const counters = document.querySelectorAll('.counter');
+
+  if (counters.length === 0) return;
+
+  let hasAnimated = false;
+
+  function animateCounter(counter) {
+    const target = parseFloat(counter.getAttribute('data-target'));
+    const decimal = parseInt(counter.getAttribute('data-decimal')) || 0;
+    const suffix = counter.getAttribute('data-suffix') || '';
+    const duration = 2000; // 2 seconds
+    const frameRate = 1000 / 60; // 60 FPS
+    const totalFrames = Math.round(duration / frameRate);
+    let frame = 0;
+
+    const easeOutQuart = (t) => 1 - Math.pow(1 - t, 4);
+
+    const updateCounter = () => {
+      frame++;
+      const progress = easeOutQuart(frame / totalFrames);
+      const current = progress * target;
+
+      if (decimal > 0) {
+        counter.textContent = current.toFixed(decimal) + suffix;
+      } else {
+        // For whole numbers, format with commas if it's 11 or 18
+        const rounded = Math.floor(current);
+        if (target === 11000 || target === 18000) {
+          // Show the base number (11 or 18) then add suffix
+          counter.textContent = rounded.toLocaleString().split(',')[0] + suffix;
+        } else {
+          counter.textContent = Math.floor(current) + suffix;
+        }
+      }
+
+      if (frame < totalFrames) {
+        requestAnimationFrame(updateCounter);
+      } else {
+        // Final value
+        if (decimal > 0) {
+          counter.textContent = target.toFixed(decimal) + suffix;
+        } else {
+          if (target === 11000 || target === 18000) {
+            const baseNum = target === 11000 ? '11' : '18';
+            counter.textContent = baseNum + suffix;
+          } else {
+            counter.textContent = Math.floor(target) + suffix;
+          }
+        }
+      }
+    };
+
+    updateCounter();
+  }
+
+  // Use Intersection Observer to trigger animation when scrolled into view
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !hasAnimated) {
+        hasAnimated = true;
+        counters.forEach(counter => {
+          animateCounter(counter);
+        });
+        observer.disconnect();
+      }
+    });
+  }, {
+    threshold: 0.5 // Trigger when 50% of the element is visible
+  });
+
+  // Observe the impact-cards container
+  const impactCards = document.querySelector('.impact-cards');
+  if (impactCards) {
+    observer.observe(impactCards);
+  }
+});
+
+// Contact form handler
+document.addEventListener('DOMContentLoaded', function() {
+  const contactForm = document.getElementById('contact-form');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      // Create mailto link
+      const subject = encodeURIComponent(`Message from ${name}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+      const mailtoLink = `mailto:rickyliudesign@gmail.com?subject=${subject}&body=${body}`;
+
+      // Open default email client
+      window.location.href = mailtoLink;
+    });
+  }
 });
