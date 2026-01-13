@@ -6,10 +6,17 @@
   --color-background-accent: #F8A900;
 }
 
-/* Navigation - Yellow to Orange Gradient */
+/* Navigation - Static positioning, shares background with hero */
 .navigation {
-  background: linear-gradient(135deg, #FDE047 0%, #FB923C 100%);
+  position: relative !important;
+  background: transparent !important;
   border-bottom: none;
+  transform: none !important;
+  z-index: 2;
+}
+
+.navigation.nav-hidden {
+  transform: none !important;
 }
 
 .nav-container {
@@ -29,9 +36,19 @@
   color: white;
 }
 
-/* Hero Section - Yellow to Orange Gradient */
-.hero-section {
+/* Hero Wrapper - Contains both nav and hero section with shared background */
+.hero-wrapper {
+  position: relative;
+  overflow: hidden;
   background: linear-gradient(135deg, #FDE047 0%, #FB923C 100%);
+}
+
+/* Hero Section - Remove negative margin since nav is not fixed */
+.hero-section {
+  background: transparent;
+  position: relative;
+  margin-top: 0 !important;
+  z-index: 1;
 }
 
 /* Override feature card hover border */

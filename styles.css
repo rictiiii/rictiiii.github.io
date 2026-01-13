@@ -258,9 +258,9 @@ pre code {
    ======================================== */
 
 .container {
-  max-width: var(--container-max-width);
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 var(--container-padding);
+  padding: 0 80px;
 }
 
 .navigation {
@@ -286,8 +286,8 @@ pre code {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--spacing-6);
-  max-width: var(--container-max-width);
+  padding: var(--spacing-6) 80px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 

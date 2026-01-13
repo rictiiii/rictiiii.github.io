@@ -6,10 +6,17 @@
   --color-background-accent: #0071E3;
 }
 
-/* Navigation - Purple to Blue Gradient */
+/* Navigation - Static positioning, shares background with hero */
 .navigation {
-  background: linear-gradient(135deg, #7C3AED 0%, #3B82F6 100%);
+  position: relative !important;
+  background: transparent !important;
   border-bottom: none;
+  transform: none !important;
+  z-index: 2;
+}
+
+.navigation.nav-hidden {
+  transform: none !important;
 }
 
 .nav-container {
@@ -29,9 +36,54 @@
   color: white;
 }
 
-/* Hero Section - Purple to Blue Gradient */
+/* Hero Wrapper - Contains both nav and hero section with shared background */
+.hero-wrapper {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+
+.hero-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.unicorn-studio-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%) scale(1.2);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.unicorn-studio-background > div {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Hero Section - Remove negative margin since nav is not fixed */
 .hero-section {
-  background: linear-gradient(135deg, #7C3AED 0%, #3B82F6 100%);
+  background: transparent;
+  position: relative;
+  margin-top: 0 !important;
+  z-index: 2;
+}
+
+.hero-content-wrapper {
+  position: relative;
+  z-index: 2;
 }
 
 /* Override tag colors */
