@@ -1,11 +1,19 @@
 // Password protection for case study pages
 (function() {
-  // Check if password is already verified in session storage
-  const pagePassword = document.body.getAttribute('data-password');
-
-  if (!pagePassword) {
-    return; // No password protection on this page
+  // Wait for DOM to be ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPasswordProtection);
+  } else {
+    initPasswordProtection();
   }
+
+  function initPasswordProtection() {
+    // Check if password is already verified in session storage
+    const pagePassword = document.body.getAttribute('data-password');
+
+    if (!pagePassword) {
+      return; // No password protection on this page
+    }
 
   const sessionKey = 'password_verified_' + window.location.pathname;
   const isVerified = sessionStorage.getItem(sessionKey);
@@ -140,4 +148,5 @@
 
   // Focus the input
   setTimeout(() => input.focus(), 100);
+  }
 })();
