@@ -27,12 +27,13 @@
 
       if (inViewport) {
         const delta = e.deltaY;
+        const scrollSpeed = 3; // Multiply scroll speed to match page scrolling
 
         // Scrolling down
         if (delta > 0) {
           if (!atBottom) {
             e.preventDefault();
-            container.scrollTop += delta;
+            container.scrollTop += delta * scrollSpeed;
             isScrollingContainer = true;
           } else {
             isScrollingContainer = false;
@@ -42,7 +43,7 @@
         else if (delta < 0) {
           if (!atTop) {
             e.preventDefault();
-            container.scrollTop += delta;
+            container.scrollTop += delta * scrollSpeed;
             isScrollingContainer = true;
           } else {
             isScrollingContainer = false;
