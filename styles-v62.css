@@ -578,11 +578,15 @@ main {
 
 /* Light theme hero styles */
 [data-theme="light"] .hero-name-gradient {
-  color: #1a1a1a !important;
+  color: #1a1a1a;
+  background: linear-gradient(180deg, #1a1a1a 0%, #6b6b6b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 [data-theme="light"] .hero-cta {
-  background: linear-gradient(180deg, #3a3a3a 0%, #1a1a1a 100%);
+  background: linear-gradient(180deg, #4a4a4a 0%, #1a1a1a 100%);
   color: #ffffff;
   box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.25);
 }
