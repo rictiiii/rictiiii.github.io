@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="Koto/pie-charts.css?v=10">
   <script src="navigation.js" defer></script>
   <script src="Koto/pie-charts.js?v=10" defer></script>
+  <script src="scroll-hijack.js" defer></script>
   <script src="chat-widget.js" defer></script>
   <script src="go-to-top.js" defer></script>
 </head>
@@ -334,7 +335,9 @@
             <p>Explored different visual directions for the home screen and service discovery interface. Tested multiple layout approaches to find the optimal balance between service promotion and user navigation.</p>
           </div>
           <div class="case-study-image" style="display: flex; justify-content: center; align-items: center;">
-            <img src="Koto/Design Explorations.png" alt="Design exploration variations" style="width: 80%;">
+            <div class="scroll-container" id="visual-design-scroll" style="width: 80%; max-height: 45vh; overflow-y: auto; overflow-x: hidden; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+              <img src="Koto/Design Explorations.png" alt="Design exploration variations" style="width: 100%; display: block;">
+            </div>
           </div>
         </div>
 
