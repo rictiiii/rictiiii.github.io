@@ -72,7 +72,42 @@
       width: 90%;
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
       animation: slideUp 0.3s ease;
+      position: relative;
     `;
+
+    // Add X button
+    const closeButton = document.createElement('button');
+    closeButton.innerHTML = '&times;';
+    closeButton.style.cssText = `
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: transparent;
+      border: none;
+      font-size: 32px;
+      color: var(--color-text-secondary, #6b6b6b);
+      cursor: pointer;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: color 0.2s ease;
+      padding: 0;
+      line-height: 1;
+    `;
+
+    closeButton.addEventListener('mouseover', function() {
+      this.style.color = 'var(--color-text-primary, #1a1a1a)';
+    });
+
+    closeButton.addEventListener('mouseout', function() {
+      this.style.color = 'var(--color-text-secondary, #6b6b6b)';
+    });
+
+    closeButton.addEventListener('click', function() {
+      overlay.remove();
+    });
 
     const title = document.createElement('h2');
     title.textContent = 'Password Required';
@@ -129,9 +164,9 @@
       gap: 12px;
     `;
 
-    const cancelButton = document.createElement('button');
-    cancelButton.textContent = 'Cancel';
-    cancelButton.style.cssText = `
+    const requestButton = document.createElement('button');
+    requestButton.textContent = 'Request Password';
+    requestButton.style.cssText = `
       flex: 1;
       padding: 14px 24px;
       background: transparent;
@@ -145,16 +180,16 @@
       transition: all 0.2s ease;
     `;
 
-    cancelButton.addEventListener('mouseover', function() {
+    requestButton.addEventListener('mouseover', function() {
       this.style.borderColor = 'var(--color-text-secondary, #6b6b6b)';
     });
 
-    cancelButton.addEventListener('mouseout', function() {
+    requestButton.addEventListener('mouseout', function() {
       this.style.borderColor = 'var(--color-border, #e5e7eb)';
     });
 
-    cancelButton.addEventListener('click', function() {
-      overlay.remove();
+    requestButton.addEventListener('click', function() {
+      window.location.href = 'mailto:rickyliudesign@gmail.com?subject=Portfolio%20Password%20Request';
     });
 
     const submitButton = document.createElement('button');
@@ -228,9 +263,10 @@
       }
     });
 
-    buttonContainer.appendChild(cancelButton);
+    buttonContainer.appendChild(requestButton);
     buttonContainer.appendChild(submitButton);
 
+    modal.appendChild(closeButton);
     modal.appendChild(title);
     modal.appendChild(description);
     modal.appendChild(input);
