@@ -161,13 +161,14 @@
     const buttonContainer = document.createElement('div');
     buttonContainer.style.cssText = `
       display: flex;
+      flex-direction: column;
       gap: 12px;
     `;
 
     const requestButton = document.createElement('button');
     requestButton.textContent = 'Request Password';
     requestButton.style.cssText = `
-      flex: 1;
+      width: 100%;
       padding: 14px 24px;
       background: transparent;
       color: var(--color-text-secondary, #6b6b6b);
@@ -178,6 +179,7 @@
       cursor: pointer;
       font-family: inherit;
       transition: all 0.2s ease;
+      white-space: nowrap;
     `;
 
     requestButton.addEventListener('mouseover', function() {
@@ -195,7 +197,7 @@
     const submitButton = document.createElement('button');
     submitButton.textContent = 'Enter';
     submitButton.style.cssText = `
-      flex: 1;
+      width: 100%;
       padding: 14px 24px;
       background: linear-gradient(180deg, #4a4a4a 0%, #1a1a1a 100%);
       color: #ffffff;
