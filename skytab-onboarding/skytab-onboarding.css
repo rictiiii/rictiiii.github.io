@@ -490,7 +490,7 @@
   }
 }
 
-/* Additional mobile breakpoint for feature modules */
+/* Small desktop breakpoint for feature modules */
 @media (max-width: 1014px) {
   div.feature-modules-grid[style] {
     grid-template-columns: 1fr !important;
